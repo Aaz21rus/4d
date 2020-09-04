@@ -1,9 +1,26 @@
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff");
-  /* Modern Browsers */ }
+  src: local(""), url("../fonts/Oswld-Regilar.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("../fonts/Oswald-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/Oswald-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/Oswald-Bold.ttf") format("truetype"); }
 
 * {
   margin: 0;
@@ -12,9 +29,9 @@
 
 body {
   background-color: #FFFFFF;
-  transition: all 0.3s;
-  font-family: 'Roboto';
-  font-weight: normal;
+  transition: all .5s;
+  font-family: 'Oswald';
+  font-weight: 400;
   font-style: normal; }
 
 a {
@@ -47,17 +64,106 @@ menu {
     align-items: center; }
     .header .container .title .burger {
       display: flex;
-      align-items: center; }
+      margin-right: 37px; }
       .header .container .title .burger .icon-burger {
         fill: #FFFFFF; }
-  .header .container .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; }
-  .header .container .btn-grup {
+    .header .container .title .logo {
+      margin-right: 27px; }
+    .header .container .title .name {
+      font-size: 47px;
+      font-weight: 300;
+      line-height: 18px;
+      color: #FFFFFF; }
+  .header .container .visitor-contauner {
     display: flex; }
-  .header .container .geust-panel {
+    .header .container .visitor-contauner .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-right: 62px;
+      justify-content: center; }
+      .header .container .visitor-contauner .contact .phone {
+        color: #ffffff;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 27px; }
+      .header .container .visitor-contauner .contact .back-call {
+        color: #ffffff;
+        font-family: "Panton - Extra Light";
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px; }
+    .header .container .visitor-contauner .btn-grup {
+      display: flex;
+      margin-right: 53px; }
+      .header .container .visitor-contauner .btn-grup button {
+        width: 206px;
+        height: 53px;
+        border-radius: 2px;
+        background-color: #eeebe4;
+        color: #000011;
+        font-family: "Panton - Semi Bold";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px; }
+        .header .container .visitor-contauner .btn-grup button:first-child {
+          margin-right: 12px; }
+        .header .container .visitor-contauner .btn-grup button:hover {
+          background-image: linear-gradient(to bottom, #efe4b7 0%, #f5bd72 72%, #f5bd72 100%); }
+    .header .container .visitor-contauner .guest-panel {
+      display: flex;
+      align-items: center; }
+      .header .container .visitor-contauner .guest-panel a {
+        color: #ffffff;
+        font-family: Panton;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 18px;
+        padding-left: 41px;
+        background-repeat: no-repeat;
+        background-position: left; }
+      .header .container .visitor-contauner .guest-panel .enter {
+        background-image: url("../images/enter.svg");
+        margin-right: 46px; }
+      .header .container .visitor-contauner .guest-panel .busket {
+        background-image: url("../images/basket.png"); }
+        .header .container .visitor-contauner .guest-panel .busket .num {
+          margin-left: .4em; }
+
+.info {
+  padding: 88px 0 227px 0; }
+  .info .titel-container {
     display: flex; }
+    .info .titel-container info-head {
+      margin-bottom: 75px;
+      color: #ffffff;
+      font-size: 57px;
+      font-weight: 500;
+      line-height: 82px;
+      text-transform: uppercase; }
+    .info .titel-container .advert-container .youtube-container .txt-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      height: 54px;
+      padding-left: 54px;
+      background-image: url("../images/youtube.png");
+      background-repeat: no-repeat;
+      background-position: left; }
+      .info .titel-container .advert-container .youtube-container .txt-container .chanel {
+        color: #eeebe4;
+        font-family: "Panton - Semi Bold";
+        font-size: 15px;
+        font-weight: 400; }
+      .info .titel-container .advert-container .youtube-container .txt-container .you {
+        color: #111111;
+        font-family: "Panton - Extra Bold";
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        background: #ffffff;
+        text-transform: uppercase; }
 
 body {
   background-image: url("../images/background.png");

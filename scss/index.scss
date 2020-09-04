@@ -7,6 +7,57 @@
 //modules
 @import "modules/header";
 
+.info {
+  padding: 88px 0 227px 0;
+  .titel-container {
+    display: flex;
+    info-head {
+      margin-bottom: 75px;
+      color: #ffffff;
+      font-size: 57px;
+      font-weight: 500;
+      line-height: 82px;
+      text-transform: uppercase;
+    }
+    .advert-container {
+      .youtube-container {
+        .txt-container {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          height: 54px;
+          padding-left: 54px;
+          background-image: url("../images/youtube.png");
+          background-repeat: no-repeat;
+          background-position: left;
+          .chanel {
+            color: #eeebe4;
+            font-family: "Panton - Semi Bold";
+            font-size: 15px;
+            font-weight: 400;
+          }
+          .you {
+            color: #111111;
+            font-family: "Panton - Extra Bold";
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 16px;
+            background: #ffffff;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .storage-container {
+        .txt {
+          .city {}
+        }
+      }
+    }
+  }
+}
+
+
 @import "modules/footer";
 
 body {

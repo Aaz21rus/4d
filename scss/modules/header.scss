@@ -9,30 +9,86 @@
       align-items: center;
       .burger {
         display: flex;
-        align-items: center;
+        margin-right: 37px;
         .icon-burger {
           fill: #FFFFFF;
         }
       }
-      .logo {}
-      .name {}
+      .logo {margin-right: 27px}
+      .name {
+        font-size: 47px;
+        font-weight: 300;
+        line-height: 18px;
+        color: #FFFFFF;
+      }
     }
-    .contact {
+    .visitor-contauner {
       display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      .phone {}
-      .back-call {}
-    }
-    .btn-grup {
-      display: flex;
-      .download {}
-      .look {}
-    }
-    .geust-panel {
-      display: flex;
-      .enter {}
-      .busket {}
+      .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 62px;
+        justify-content: center;
+        .phone {
+          color: #ffffff;
+          font-size: 25px;
+          font-weight: 500;
+          line-height: 27px;
+        }
+        .back-call {
+          color: #ffffff;
+          font-family: "Panton - Extra Light";
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 18px;
+        }
+      }
+      .btn-grup {
+        display: flex;
+        margin-right: 53px;
+        button {
+          width: 206px;
+          height: 53px;
+          border-radius: 2px;
+          background-color: #eeebe4;
+          color: #000011;
+          font-family: "Panton - Semi Bold";
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 18px;
+          &:first-child {
+            margin-right: 12px;
+          }
+          &:hover {
+            background-image: linear-gradient(to bottom, #efe4b7 0%, #f5bd72 72%, #f5bd72 100%);
+          }
+        }
+      }
+      .guest-panel {
+        display: flex;
+        align-items: center;
+        a {
+          color: #ffffff;
+          font-family: Panton;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 18px;
+          padding-left: 41px;
+          background-repeat: no-repeat;
+          background-position: left;
+        }
+        .enter {
+          background-image: url("../images/enter.svg");
+          margin-right: 46px;
+        }
+        .busket {
+          background-image: url("../images/basket.png");
+          .num {
+            margin-left: .4em;
+          }
+        }
+      }
     }
   }
 }
