@@ -1,0 +1,17 @@
+@import 'fonts/fonts';
+@import 'general/global';
+
+//components
+@import "components/components";
+
+//modules
+@import "modules/header";
+
+@import "modules/footer";
+
+body {
+  background-image: url("../images/background.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

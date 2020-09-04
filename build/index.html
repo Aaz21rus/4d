@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css"/>
+  </head>
+  <body>
+    <!--svg(display="none")-->
+    <!--  symbol(width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg", id="burger")-->
+    <!--    path(d="M7.2 19.2C5.88 19.2 4.8 20.28 4.8 21.6C4.8 22.92 5.88 24 7.2 24C8.52 24 9.6 22.92 9.6 21.6C9.6 20.28 8.52 19.2 7.2 19.2ZM0 0V2.4H2.4L6.72 11.52L5.04 14.4C4.92 14.76 4.8 15.24 4.8 15.6C4.8 16.92 5.88 18 7.2 18H21.6V15.6H7.68C7.56 15.6 7.44 15.48 7.44 15.36V15.24L8.52 13.2H17.4C18.36 13.2 19.08 12.72 19.44 12L23.76 4.2C24 3.96 24 3.84 24 3.6C24 2.88 23.52 2.4 22.8 2.4H5.04L3.96 0H0ZM19.2 19.2C17.88 19.2 16.8 20.28 16.8 21.6C16.8 22.92 17.88 24 19.2 24C20.52 24 21.6 22.92 21.6 21.6C21.6 20.28 20.52 19.2 19.2 19.2Z")-->
+    <svg display="none">
+      <symbol width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="burger">
+        <g>
+          <g>
+            <image width="24" height="18" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAYAAABB7B6eAAAARklEQVQ4T2P88+ffAUZGBnsGGoD//xkOMtLcAho4HMVIxlELCIXAMAgimidTmltAKJIolR8GkUxpEBDSPwyCiObJlNYWAADu9ShXQXMCbAAAAABJRU5ErkJggg=="></image>
+          </g>
+        </g>
+      </symbol>
+    </svg>
+    <header class="header">
+      <div class="wrapper">
+        <div class="container">
+          <div class="title">
+            <button class="burger" type="button">
+              <svg class="icon-burger" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#burger"></use>
+              </svg>
+            </button><img class="logo" src="images/logo.png" alt="img"/>
+            <p class="name">Joker Fireworks</p>
+          </div>
+          <div class="contact"><a class="phone" href="tel:+79100007994">+7 (910) 000-79-94</a><a class="back-call" href="#">Обратный звонок</a></div>
+          <div class="btn-grup">
+            <button class="download" type="button">Скачать прайс</button>
+            <button class="look" type="button">Смотреть каталог</button>
+          </div>
+          <div class="geust-panel"><a class="enter" href="#">Вход для клиентов</a><a class="busket" href="#">Товаров в корзине: 0</a></div>
+        </div>
+      </div>
+    </header>
+    <main class="main"></main>
+    <footer class="footer"></footer>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+.header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0 18px 0;
+    align-items: center;
+    .title {
+      display: flex;
+      align-items: center;
+      .burger {
+        display: flex;
+        align-items: center;
+        .icon-burger {
+          fill: #FFFFFF;
+        }
+      }
+      .logo {}
+      .name {}
+    }
+    .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      .phone {}
+      .back-call {}
+    }
+    .btn-grup {
+      display: flex;
+      .download {}
+      .look {}
+    }
+    .geust-panel {
+      display: flex;
+      .enter {}
+      .busket {}
+    }
+  }
+}
