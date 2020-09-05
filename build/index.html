@@ -7,14 +7,20 @@
     <link rel="stylesheet" href="css/index.css"/>
   </head>
   <body>
-    <!--svg(display="none")-->
-    <!--  symbol(width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg", id="burger")-->
-    <!--    path(d="M7.2 19.2C5.88 19.2 4.8 20.28 4.8 21.6C4.8 22.92 5.88 24 7.2 24C8.52 24 9.6 22.92 9.6 21.6C9.6 20.28 8.52 19.2 7.2 19.2ZM0 0V2.4H2.4L6.72 11.52L5.04 14.4C4.92 14.76 4.8 15.24 4.8 15.6C4.8 16.92 5.88 18 7.2 18H21.6V15.6H7.68C7.56 15.6 7.44 15.48 7.44 15.36V15.24L8.52 13.2H17.4C18.36 13.2 19.08 12.72 19.44 12L23.76 4.2C24 3.96 24 3.84 24 3.6C24 2.88 23.52 2.4 22.8 2.4H5.04L3.96 0H0ZM19.2 19.2C17.88 19.2 16.8 20.28 16.8 21.6C16.8 22.92 17.88 24 19.2 24C20.52 24 21.6 22.92 21.6 21.6C21.6 20.28 20.52 19.2 19.2 19.2Z")-->
     <svg display="none">
       <symbol width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="burger">
         <g>
           <g>
             <image width="24" height="18" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAYAAABB7B6eAAAARklEQVQ4T2P88+ffAUZGBnsGGoD//xkOMtLcAho4HMVIxlELCIXAMAgimidTmltAKJIolR8GkUxpEBDSPwyCiObJlNYWAADu9ShXQXMCbAAAAABJRU5ErkJggg=="></image>
+          </g>
+        </g>
+      </symbol>
+    </svg>
+    <svg display="none">
+      <symbol width="17" height="9" viewBox="0 0 17 9" xmlns="http://www.w3.org/2000/svg" id="arrow">
+        <g>
+          <g>
+            <image width="17" height="9" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAxUlEQVQoU43SvS5FURDF8d/KRSQKSrVCRaPyCGoKz6IUGiqJ8BoeQ3wUtESr0isUI1tcOfc45OxqstfMf2bW3tE5VbWLHVwmeehq/8WZilW1jUPc4SzJ22hIVa1gDUe4xwneMelBCj9Nv7Wvu1RVK97HK87xgWW0hJltByZr0EmD3GILL3jGEhYGII3RB89hvkGaF83Q9eYFbrA40LUPmKaka+wxNnCK6yR/Ff3izxhVVRdYxUGSp9Gv0/snm9jDVZLHsZBP91c5PquZoU4AAAAASUVORK5CYII="></image>
           </g>
         </g>
       </symbol>
@@ -44,7 +50,7 @@
     <main class="main">
       <div class="wrapper">
         <section class="info">
-          <div class="titel-container">
+          <div class="title-container">
             <h1 class="info-head">Производитель<br/>и оптовый поставщик<br/>пиротехники в России</h1>
             <div class="advert-container"><a class="youtube-container" href="#">
                 <div class="txt-container">
@@ -58,20 +64,172 @@
             </div>
           </div>
           <div class="props-container">
-            <div class="text-container">
-              <div class="num1"></div>
-              <p class="txt">Оригинальный многосюжетный дизайн упаковки</p>
+            <div class="text-container"><img class="num1" src="images/01.png" alt="img"/>
+              <p class="txt">Оригинальный<br/>многосюжетный дизайн<br/>упаковки</p>
             </div>
-            <div class="text-container">
-              <div class="num2"></div>
-              <p class="txt">у нас Самая широкая линейка петард в россии</p>
+            <div class="text-container"><img class="num2" src="images/02.png" alt="img"/>
+              <p class="txt">у нас самая широкая<br/>линейка петард<br/>в россии</p>
             </div>
-            <div class="text-container">
-              <div class="num3"></div>
-              <p class="txt">Ежегодное обновление ассортимента на 20%</p>
+            <div class="text-container"><img class="num3" src="images/03.png" alt="img"/>
+              <p class="txt">Ежегодное обновление<br/>ассортимента на 20%</p>
             </div>
           </div>
-          <button class="consult" type="button"></button>
+          <button class="consult" type="button">Консультация специалиста</button>
+        </section>
+        <section class="new-goods">
+          <h2 class="title">Новые поступления</h2>
+          <div class="container">
+            <button class="arr left" type="button">
+              <svg class="icon-arrow" width="17" height="9" viewBox="0 0 17 9" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </button>
+            <button class="arr right" type="button">
+              <svg class="icon-arrow" width="17" height="9" viewBox="0 0 17 9" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </button><a class="card" href="#">
+              <div class="img-container"><img class="picture" src="images/pirate.png" alt="img"/></div>
+              <p class="name">Петарда JF K0201F</p>
+              <p class="txt">Продающий текст - описание товара.<br/>Зарегистрируйтесь, чтобы узнать<br/>оптовую цену.</p>
+              <div class="btn">Узнать цену</div></a><a class="card" href="#">
+              <div class="img-container"><img class="picture" src="images/corsar.png" alt="img"/></div>
+              <p class="name">Петарда JF К0203-3 'Корсар'</p>
+              <p class="txt">Продающий текст - описание товара.<br/>Зарегистрируйтесь, чтобы узнать<br/>оптовую цену.</p>
+              <div class="btn">Узнать цену</div></a><a class="card" href="#">
+              <div class="img-container"><img class="picture" src="images/megaboom.png" alt="img"/></div>
+              <p class="name">Петарда JF TC-5B 'Мега Бум'</p>
+              <p class="txt">Продающий текст - описание товара.<br/>Зарегистрируйтесь, чтобы узнать<br/>оптовую цену.</p>
+              <div class="btn">Узнать цену</div></a><a class="card" href="#">
+              <div class="img-container"><img class="picture" src="images/war.png" alt="img"/></div>
+              <p class="name">Петарда JF P8000</p>
+              <p class="txt">Продающий текст - описание товара.<br/>Зарегистрируйтесь, чтобы узнать<br/>оптовую цену.</p>
+              <div class="btn">Узнать цену</div></a>
+          </div>
+          <ul class="list">
+            <li class="item">
+              <button class="point" type="button"></button>
+              <button class="point" type="button"></button>
+              <button class="point" type="button"></button>
+              <button class="point" type="button"></button>
+            </li>
+          </ul>
+        </section>
+        <section class="assortment">
+          <h2 class="title">В нашем ассортименте</h2>
+          <div class="card-container">
+            <div class="card">
+              <div class="img-container"><img class="pic" src="images/fire-star.png" alt="img"/></div>
+              <div class="txt-container">
+                <div class="name-container">
+                  <p class="name">Бытовая пиротехника</p>
+                  <p class="amount">(289 наименований)</p>
+                </div>
+                <button class="search" type="button"></button>
+                <ul class="list-assort">
+                  <li class="item">
+                    <p class="txt">Петарда</p>
+                    <div class="line"></div>
+                    <p class="txt txt2">от 6 руб/уп.</p>
+                  </li>
+                  <li class="item">
+                    <p class="txt">Салютная установка 9 выстрелов 0,8”</p>
+                    <div class="line"></div>
+                    <p class="txt txt2">от 176 руб/шт.</p>
+                  </li>
+                  <li class="item">
+                    <p class="txt">Ракета 0,3"</p>
+                    <div class="line"></div>
+                    <p class="txt txt2">от 23 руб/шт.</p>
+                  </li>
+                  <li class="item">
+                    <p class="txt">Римская свеча 20 зарядов</p>
+                    <div class="line"></div>
+                    <p class="txt txt2">от 12,5 руб/шт.</p>
+                  </li>
+                  <li class="item">
+                    <p class="txt">Фонтан 1,5 м.</p>
+                    <div class="line"></div>
+                    <p class="txt txt2">от 16 руб/шт.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img-container"><img class="pic" src="images/fireworks.png" alt="img"/></div>
+              <div class="txt-container">
+                <div class="name-container">
+                  <p class="name">Сценическая пиротехника</p>
+                  <p class="amount">(29 наименований)</p>
+                </div>
+                <button class="search" type="button"></button>
+                <ul class="list-assort">
+                  <li class="item">
+                    <p class="txt">Петарда</p>
+                    <div class="line"></div>
+                    <p class="txt txt2">от 6 руб/уп.</p>
+                  </li>
+                  <li class="item">
+                    <p class="txt">Салютная установка 9 выстрелов 0,8”</p>
+                    <div class="line"></div>
+                    <p class="txt txt2">от 176 руб/шт.</p>
+                  </li>
+                  <li class="item">
+                    <p class="txt">Ракета 0,3"</p>
+                    <div class="line"></div>
+                    <p class="txt txt2">от 23 руб/шт.</p>
+                  </li>
+                  <li class="item">
+                    <p class="txt">Римская свеча 20 зарядов</p>
+                    <div class="line"></div>
+                    <p class="txt txt2">от 12,5 руб/шт.</p>
+                  </li>
+                  <li class="item">
+                    <p class="txt">Фонтан 1,5 м.</p>
+                    <div class="line"></div>
+                    <p class="txt txt2">от 16 руб/шт.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img-container"><img class="pic" src="images/star.png" alt="img"/></div>
+              <div class="txt-container">
+                <div class="name-container">
+                  <p class="name">Профессиональная пиротехника</p>
+                  <p class="amount">(167+ эффектов)</p>
+                </div>
+                <button class="search" type="button"></button>
+                <ul class="list-assort">
+                  <li class="item">
+                    <p class="txt">Петарда</p>
+                    <div class="line"></div>
+                    <p class="txt txt2">от 6 руб/уп.</p>
+                  </li>
+                  <li class="item">
+                    <p class="txt">Салютная установка 9 выстрелов 0,8”</p>
+                    <div class="line"></div>
+                    <p class="txt txt2">от 176 руб/шт.</p>
+                  </li>
+                  <li class="item">
+                    <p class="txt">Ракета 0,3"</p>
+                    <div class="line"></div>
+                    <p class="txt txt2">от 23 руб/шт.</p>
+                  </li>
+                  <li class="item">
+                    <p class="txt">Римская свеча 20 зарядов</p>
+                    <div class="line"></div>
+                    <p class="txt txt2">от 12,5 руб/шт.</p>
+                  </li>
+                  <li class="item">
+                    <p class="txt">Фонтан 1,5 м.</p>
+                    <div class="line"></div>
+                    <p class="txt txt2">от 16 руб/шт.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </main>

@@ -1,3 +1,5 @@
+-var newGood = [{src:"images/pirate.png",name:"Петарда JF K0201F"},{src:"images/corsar.png",name:"Петарда JF К0203-3 'Корсар'"},{src:"images/megaboom.png",name:"Петарда JF TC-5B 'Мега Бум'"},{src:"images/war.png",name:"Петарда JF P8000"}]
+-var assortment = [{src:"images/fire-star.png",name:"Бытовая пиротехника",txt:"(289 наименований)"},{src:"images/fireworks.png",name:"Сценическая пиротехника",txt:"(29 наименований)"},{src:"images/star.png",name:"Профессиональная пиротехника",txt:"(167+ эффектов)"}]
 
 <!DOCTYPE html>
 html(lang="ru")
@@ -13,7 +15,7 @@ html(lang="ru")
     main.main
       .wrapper
         section.info
-          .titel-container
+          .title-container
             h1.info-head Производитель
               br
               | и оптовый поставщик
@@ -31,15 +33,85 @@ html(lang="ru")
                   span.city - склад в Крыму
           .props-container
             .text-container
-              .num1
-              p.txt Оригинальный многосюжетный дизайн упаковки
+              img.num1(src="images/01.png" alt="img")
+              p.txt Оригинальный
+                br
+                |многосюжетный дизайн
+                br
+                |упаковки
             .text-container
-              .num2
-              p.txt у нас Самая широкая линейка петард в россии
+              img.num2(src="images/02.png" alt="img")
+              p.txt у нас самая широкая
+                br
+                |линейка петард
+                br
+                |в россии
             .text-container
-              .num3
-              p.txt Ежегодное обновление ассортимента на 20%
-          button.consult(type="button")
+              img.num3(src="images/03.png" alt="img")
+              p.txt Ежегодное обновление
+                br
+                |ассортимента на 20%
+          button.consult(type="button") Консультация специалиста
+
+        section.new-goods
+          h2.title Новые поступления
+          .container
+            button.arr.left(type="button")
+              svg.icon-arrow(width="17", height="9", viewBox="0 0 17 9", xmlns="http://www.w3.org/2000/svg")
+                use(xlink:href="#arrow")
+            button.arr.right(type="button")
+              svg.icon-arrow(width="17", height="9", viewBox="0 0 17 9", xmlns="http://www.w3.org/2000/svg")
+                use(xlink:href="#arrow")
+            each i in newGood
+              a.card(href="#")
+                .img-container
+                  img.picture(src=i.src alt="img")
+                p.name=i.name
+                p.txt Продающий текст - описание товара.
+                  br
+                  |Зарегистрируйтесь, чтобы узнать
+                  br
+                  |оптовую цену.
+                .btn Узнать цену
+          ul.list
+            li.item
+              button.point(type="button")
+              button.point(type="button")
+              button.point(type="button")
+              button.point(type="button")
+        section.assortment
+          h2.title В нашем ассортименте
+          .card-container
+            each i in assortment
+              .card
+                .img-container
+                  img.pic(src=i.src alt="img")
+                .txt-container
+                  .name-container
+                    p.name=i.name
+                    p.amount=i.txt
+                  button.search(type="button")
+                  ul.list-assort
+                    li.item
+                      p.txt Петарда
+                      .line
+                      p.txt.txt2 от 6 руб/уп.
+                    li.item
+                      p.txt Салютная установка 9 выстрелов 0,8”
+                      .line
+                      p.txt.txt2 от 176 руб/шт.
+                    li.item
+                      p.txt Ракета 0,3"
+                      .line
+                      p.txt.txt2 от 23 руб/шт.
+                    li.item
+                      p.txt Римская свеча 20 зарядов
+                      .line
+                      p.txt.txt2 от 12,5 руб/шт.
+                    li.item
+                      p.txt Фонтан 1,5 м.
+                      .line
+                      p.txt.txt2 от 16 руб/шт.
 
     include ./modules/footer
 
