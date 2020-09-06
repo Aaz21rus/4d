@@ -48,8 +48,8 @@
       </div>
     </header>
     <main class="main">
-      <div class="wrapper">
-        <section class="info">
+      <section class="info">
+        <div class="wrapper">
           <div class="title-container">
             <h1 class="info-head">Производитель<br/>и оптовый поставщик<br/>пиротехники в России</h1>
             <div class="advert-container"><a class="youtube-container" href="#">
@@ -75,8 +75,10 @@
             </div>
           </div>
           <button class="consult" type="button">Консультация специалиста</button>
-        </section>
-        <section class="new-goods">
+        </div>
+      </section>
+      <section class="new-goods">
+        <div class="wrapper">
           <h2 class="title">Новые поступления</h2>
           <div class="container">
             <button class="arr left" type="button">
@@ -120,8 +122,10 @@
               <button class="point" type="button"></button>
             </li>
           </ul>
-        </section>
-        <section class="assortment">
+        </div>
+      </section>
+      <section class="assortment">
+        <div class="wrapper">
           <h2 class="title">В нашем ассортименте</h2>
           <div class="card-container">
             <div class="card">
@@ -238,15 +242,20 @@
           </div>
           <div class="offer-container">
             <div class="offer">
-              <p class="wholesale">успей купить<br/><span class="big">оптом</span></p>
-              <div class="price-container">
-                <p class="name">салютная установка</p>
-                <p class="price">от 395₽/шт.</p>
-                <p class="details">*17 видов салютных установок<br/>на 19 выстрелов (0.8-2 калибр)</p>
+              <div class="inline">
+                <p class="wholesale">успей купить<br/><span class="big">оптом</span></p>
+                <div class="price-container">
+                  <p class="name">салютная установка</p>
+                  <p class="price">от 395₽/шт.</p>
+                  <p class="details">*17 видов салютных установок<br/>на 19 выстрелов (0.8-2 калибр)</p>
+                </div>
               </div>
-              <div class="timer-container">
-                <p class="timer">00 : 13 : 02 : 30</p>
-                <p class="timer-txt"><span class="day">дней</span><span class="hour">часов</span><span class="minutes">минут</span><span class="sec">секунд</span></p>
+              <div class="clock">
+                <div class="timer-container">
+                  <p class="timer-name">До конца акции осталось</p>
+                  <p class="timer">00 : 13 : 02 : 30</p>
+                  <p class="timer-txt"><span class="day">дней</span><span class="hour">часов</span><span class="minutes">минут</span><span class="sec">секунд</span></p>
+                </div>
               </div>
             </div>
             <form class="request">
@@ -258,25 +267,60 @@
               </div>
               <label for="phone"></label>
               <div class="input-grup">
-                <div class="icon"></div>
+                <div class="icon phone"></div>
                 <input class="input form-control" type="email" id="phone" placeholder="Ваш телефон"/>
               </div>
               <label for="email"></label>
               <div class="input-grup">
-                <div class="icon"></div>
+                <div class="icon email"></div>
                 <input class="input form-control" type="email" id="email" placeholder="Ваш e-mail"/>
               </div>
               <button class="sent" type="sent">Отправить заявку</button>
               <p class="form-terms">
                 <input class="form-agreement" id="agreement" type="checkbox"/>
-                <label class="form__label" for="agreement">Я согласен с условиями обработки персональных данных</label>
+                <label class="form-label" for="agreement">Я согласен с условиями обработки персональных данных</label>
               </p>
-            </form>
+            </form><img class="book" src="images/book2.png" alt="img"/>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+      <section class="advantage">
+        <div class="wrapper">
+          <h2 class="advantage-title">Наши преимущества</h2>
+          <div class="numbers-container">
+            <p class="txt-head">цифры говорят<br/>сами за себя:</p>
+            <p class="txt-kind"><span class="num">157</span><span class="txt">видов батареи<br/>салютов</span></p>
+            <p class="txt-kind"><span class="num">289</span><span class="txt">позиций бытовой<br/>пиротехники</span></p>
+            <p class="txt-kind"><span class="num">2440 м2</span><span class="txt">собственных складов<br/>в Москве и Крыму</span></p>
+          </div>
+        </div>
+        <div class="advantage-container">
+          <div class="wrapper">
+            <ul class="advantage-list">
+              <li class="item"><img class="numbr" src="images/adv01.png"/>
+                <p class="txt">Наши фабрики в Китае производят под наше ТЗ продукцию</p>
+              </li>
+              <li class="item"><img class="numbr" src="images/adv02.png"/>
+                <p class="txt">Вся продукция проходит лабораторные исследования перед продажей</p>
+              </li>
+              <li class="item"><img class="numbr" src="images/adv03.png"/>
+                <p class="txt">Мы производиv самую широкую линейку петард в РФ</p>
+              </li>
+              <li class="item"><img class="numbr" src="images/adv04.png"/>
+                <p class="txt">У нас партнерские розничные магазины по всему Крыму, мы в постоянном контакте с потребителем</p>
+              </li>
+              <li class="item"><img class="numbr" src="images/adv05.png"/>
+                <p class="txt">Мы создали свой отдел дизайнеров для разработки оригинальных этикеток</p>
+              </li>
+              <li class="item"><img class="numbr" src="images/adv06.png"/>
+                <p class="txt">Представляем большой ассортимент профессиональной пиротехники</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer"></footer>
-    <script src="js/scripts.js"></script>
   </body>
 </html>
+<footer class="footer"></footer>
+<script src="js/scripts.js"></script>

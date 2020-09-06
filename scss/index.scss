@@ -350,60 +350,228 @@ body {
   }
   .offer-container {
     display: flex;
+    position: relative;
     justify-content: space-between;
+    margin-top: 103px;
     .offer {
-      .wholesale {
-        font-size: 55px;
-        font-weight: 500;
-        text-transform: uppercase;
-        line-height: 58px;
-        .big {
-          color: #7ab5bb;
-          font-size: 115px;
-          line-height: 113px;
-        }
-      }
-      .price-container {
-        .name {
-          margin-bottom: 12px;
-          color: #111111;
-          font-size: 38px;
+      width: 52%;
+      z-index: 1;
+      .inline {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 88px;
+        .wholesale {
+          font-size: 55px;
           font-weight: 500;
-          line-height: 42px;
           text-transform: uppercase;
+          line-height: 58px;
+          .big {
+            color: #7ab5bb;
+            font-size: 115px;
+            line-height: 113px;
+          }
         }
-        .price {
-          margin-bottom: 23px;
-          color: #eda961;
-          font-size: 75px;
-          font-weight: 500;
-          line-height: 68px;
-        }
-        .details {
-          color: #111111;
-          font-family: 'Panton';
-          font-size: 18px;
-          font-weight: 400;
-          line-height: 22px;
+        .price-container {
+          .name {
+            margin-bottom: 12px;
+            color: #111111;
+            font-size: 38px;
+            font-weight: 500;
+            line-height: 42px;
+            text-transform: uppercase;
+          }
+          .price {
+            margin-bottom: 23px;
+            color: #eda961;
+            font-size: 75px;
+            font-weight: 500;
+            line-height: 68px;
+          }
+          .details {
+            color: #111111;
+            font-family: 'Panton';
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+          }
         }
       }
-      .timer-container {
-        .timer {}
-        .timer-txt {
-          .day {}
-          .hour {}
-          .minutes {}
-          .sec {}
+      .clock {
+        display: flex;
+        .timer-container  {
+          .timer-name {
+            margin-bottom: 7px;
+            text-align: center;
+            font-family: 'Panton';
+            font-size: 27px;
+            font-weight: 700;
+            line-height: 57px;
+          }
+          .timer {
+            color: #f2b26e;
+            font-size: 68px;
+            font-weight: 500;
+            line-height: 57px;
+          }
+          .timer-txt {
+            color: #1c0902;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 57px;
+            .day {
+              color: #1c0902;
+              font-family: "Panton";
+              font-size: 24px;
+              font-weight: 400;
+              line-height: 57px;
+              margin-left: 8px;
+            }
+            .hour {
+              color: #1c0902;
+              font-family: "Panton";
+              font-size: 24px;
+              font-weight: 400;
+              line-height: 57px;
+              margin-left: 60px;
+            }
+            .minutes {
+              color: #1c0902;
+              font-family: "Panton";
+              font-size: 24px;
+              font-weight: 400;
+              line-height: 57px;
+              margin-left: 49px;
+            }
+            .sec {
+              color: #1c0902;
+              font-family: "Panton";
+              font-size: 24px;
+              font-weight: 400;
+              line-height: 57px;
+              margin-left: 40px;
+            }
+          }
         }
       }
     }
     .request {
+      padding: 40px 42px 60px 41px;
+      width: 473px;
+      background-image: url("../images/back-form.png");
+      background-repeat: no-repeat;
       .form-title {
-        .input-grup {
-          .icon {}
-          .input {}
+        margin-bottom: 41px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 31px;
+        font-weight: 500;
+        line-height: 28px;
+      }
+      .input-grup {
+         display: flex;
+         margin-bottom: 18px;
+         width: 100%;
+         border-radius: 4px;
+         background-color: #ffffff;
+         padding: 12px 12px 14px 31px;
+         .icon {
+           width: 17px;
+           padding: 4px 19px 5px 19px;
+           background-image: url("../images/men.png");
+           background-repeat: no-repeat;
+           background-position: left center;
+         }
+         .phone {
+           background-image: url("../images/phone.png");
+         }
+         .email {
+           background-image: url("../images/mail.png");
+         }
+         .input {
+           padding-left: 26px;
+           border: none;
+           border-left: 1px solid #d1d1d1;
+           color: #525252;
+           font-family: 'Panton';
+           font-size: 16px;
+           font-weight: 400;
+           line-height: 25px;
+           letter-spacing: 0.32px;
+         }
+       }
+      .sent {
+        width: 100%;
+        height: 81px;
+        margin-bottom: 40px;
+        box-shadow: 0 3px 1px 1px rgba(220, 113, 42, 0.3);
+        border-radius: 4px;
+        background-color: #06aae7;
+        background-image: linear-gradient(to bottom, #efe4b7 0%, #f5bd72 72%, #f5bd72 100%);
+        color: #ffffff;
+        font-family: "Panton";
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.38px;
+      }
+      .form-terms {
+        display: flex;
+        margin-top: 8px;
+        text-align: left;
+        flex-direction: row;
+        color: #ffffff;
+        font-family: 'Panton';
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 20px;
+        letter-spacing: 0.3px;
+        .form-agreement {
+          display: none;
+        }
+        .form-agreement + .form-label::after {
+          content: none;
+        }
+        .form-agreement:checked + .form-label::after {
+          content: "";
+        }
+        .form-label {
+          display: inline-block;
+          position: relative;
+          padding-top: 3px;
+          padding-left: 32px;
+          font-size: 13px;
+          line-height: 1.5;
+          &:before {
+            display: inline-block;
+            position: absolute;
+            content: "";
+            top: 3px;
+            left: 0px;
+            height: 14px;
+            width: 14px;
+            border: 2px solid #FFFFFF;
+          }
+          &:after {
+            display: inline-block;
+            position: absolute;
+            content: "";
+            top: 6px;
+            left: 4px;
+            height: 6px;
+            width: 9px;
+            border-left: 2px solid;
+            border-bottom: 2px solid;
+            color: #FE4D2D;
+            transform: rotate(-45deg);
+          }
         }
       }
+    }
+    .book {
+      position: absolute;
+      bottom: -45%;
+      right: 29%;
     }
   }
 }

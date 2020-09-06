@@ -545,32 +545,191 @@ body {
             font-weight: 700; }
   .assortment .offer-container {
     display: flex;
-    justify-content: space-between; }
-    .assortment .offer-container .offer .wholesale {
-      font-size: 55px;
-      font-weight: 500;
-      text-transform: uppercase;
-      line-height: 58px; }
-      .assortment .offer-container .offer .wholesale .big {
-        color: #7ab5bb;
-        font-size: 115px;
-        line-height: 113px; }
-    .assortment .offer-container .offer .price-container .name {
-      margin-bottom: 12px;
-      color: #111111;
-      font-size: 38px;
-      font-weight: 500;
-      line-height: 42px;
-      text-transform: uppercase; }
-    .assortment .offer-container .offer .price-container .price {
-      margin-bottom: 23px;
-      color: #eda961;
-      font-size: 75px;
-      font-weight: 500;
-      line-height: 68px; }
-    .assortment .offer-container .offer .price-container .details {
-      color: #111111;
-      font-family: 'Panton';
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 22px; }
+    position: relative;
+    justify-content: space-between;
+    margin-top: 103px; }
+    .assortment .offer-container .offer {
+      width: 52%;
+      z-index: 1; }
+      .assortment .offer-container .offer .inline {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 88px; }
+        .assortment .offer-container .offer .inline .wholesale {
+          font-size: 55px;
+          font-weight: 500;
+          text-transform: uppercase;
+          line-height: 58px; }
+          .assortment .offer-container .offer .inline .wholesale .big {
+            color: #7ab5bb;
+            font-size: 115px;
+            line-height: 113px; }
+        .assortment .offer-container .offer .inline .price-container .name {
+          margin-bottom: 12px;
+          color: #111111;
+          font-size: 38px;
+          font-weight: 500;
+          line-height: 42px;
+          text-transform: uppercase; }
+        .assortment .offer-container .offer .inline .price-container .price {
+          margin-bottom: 23px;
+          color: #eda961;
+          font-size: 75px;
+          font-weight: 500;
+          line-height: 68px; }
+        .assortment .offer-container .offer .inline .price-container .details {
+          color: #111111;
+          font-family: 'Panton';
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 22px; }
+      .assortment .offer-container .offer .clock {
+        display: flex; }
+        .assortment .offer-container .offer .clock .timer-container .timer-name {
+          margin-bottom: 7px;
+          text-align: center;
+          font-family: 'Panton';
+          font-size: 27px;
+          font-weight: 700;
+          line-height: 57px; }
+        .assortment .offer-container .offer .clock .timer-container .timer {
+          color: #f2b26e;
+          font-size: 68px;
+          font-weight: 500;
+          line-height: 57px; }
+        .assortment .offer-container .offer .clock .timer-container .timer-txt {
+          color: #1c0902;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 57px; }
+          .assortment .offer-container .offer .clock .timer-container .timer-txt .day {
+            color: #1c0902;
+            font-family: "Panton";
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 57px;
+            margin-left: 8px; }
+          .assortment .offer-container .offer .clock .timer-container .timer-txt .hour {
+            color: #1c0902;
+            font-family: "Panton";
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 57px;
+            margin-left: 60px; }
+          .assortment .offer-container .offer .clock .timer-container .timer-txt .minutes {
+            color: #1c0902;
+            font-family: "Panton";
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 57px;
+            margin-left: 49px; }
+          .assortment .offer-container .offer .clock .timer-container .timer-txt .sec {
+            color: #1c0902;
+            font-family: "Panton";
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 57px;
+            margin-left: 40px; }
+    .assortment .offer-container .request {
+      padding: 40px 42px 60px 41px;
+      width: 473px;
+      background-image: url("../images/back-form.png");
+      background-repeat: no-repeat; }
+      .assortment .offer-container .request .form-title {
+        margin-bottom: 41px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 31px;
+        font-weight: 500;
+        line-height: 28px; }
+      .assortment .offer-container .request .input-grup {
+        display: flex;
+        margin-bottom: 18px;
+        width: 100%;
+        border-radius: 4px;
+        background-color: #ffffff;
+        padding: 12px 12px 14px 31px; }
+        .assortment .offer-container .request .input-grup .icon {
+          width: 17px;
+          padding: 4px 19px 5px 19px;
+          background-image: url("../images/men.png");
+          background-repeat: no-repeat;
+          background-position: left center; }
+        .assortment .offer-container .request .input-grup .phone {
+          background-image: url("../images/phone.png"); }
+        .assortment .offer-container .request .input-grup .email {
+          background-image: url("../images/mail.png"); }
+        .assortment .offer-container .request .input-grup .input {
+          padding-left: 26px;
+          border: none;
+          border-left: 1px solid #d1d1d1;
+          color: #525252;
+          font-family: 'Panton';
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 25px;
+          letter-spacing: 0.32px; }
+      .assortment .offer-container .request .sent {
+        width: 100%;
+        height: 81px;
+        margin-bottom: 40px;
+        box-shadow: 0 3px 1px 1px rgba(220, 113, 42, 0.3);
+        border-radius: 4px;
+        background-color: #06aae7;
+        background-image: linear-gradient(to bottom, #efe4b7 0%, #f5bd72 72%, #f5bd72 100%);
+        color: #ffffff;
+        font-family: "Panton";
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.38px; }
+      .assortment .offer-container .request .form-terms {
+        display: flex;
+        margin-top: 8px;
+        text-align: left;
+        flex-direction: row;
+        color: #ffffff;
+        font-family: 'Panton';
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 20px;
+        letter-spacing: 0.3px; }
+        .assortment .offer-container .request .form-terms .form-agreement {
+          display: none; }
+        .assortment .offer-container .request .form-terms .form-agreement + .form-label::after {
+          content: none; }
+        .assortment .offer-container .request .form-terms .form-agreement:checked + .form-label::after {
+          content: ""; }
+        .assortment .offer-container .request .form-terms .form-label {
+          display: inline-block;
+          position: relative;
+          padding-top: 3px;
+          padding-left: 32px;
+          font-size: 13px;
+          line-height: 1.5; }
+          .assortment .offer-container .request .form-terms .form-label:before {
+            display: inline-block;
+            position: absolute;
+            content: "";
+            top: 3px;
+            left: 0px;
+            height: 14px;
+            width: 14px;
+            border: 2px solid #FFFFFF; }
+          .assortment .offer-container .request .form-terms .form-label:after {
+            display: inline-block;
+            position: absolute;
+            content: "";
+            top: 6px;
+            left: 4px;
+            height: 6px;
+            width: 9px;
+            border-left: 2px solid;
+            border-bottom: 2px solid;
+            color: #FE4D2D;
+            transform: rotate(-45deg); }
+    .assortment .offer-container .book {
+      position: absolute;
+      bottom: -45%;
+      right: 29%; }

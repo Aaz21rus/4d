@@ -1,5 +1,6 @@
 -var newGood = [{src:"images/pirate.png",name:"Петарда JF K0201F"},{src:"images/corsar.png",name:"Петарда JF К0203-3 'Корсар'"},{src:"images/megaboom.png",name:"Петарда JF TC-5B 'Мега Бум'"},{src:"images/war.png",name:"Петарда JF P8000"}]
 -var assortment = [{src:"images/fire-star.png",name:"Бытовая пиротехника",txt:"(289 наименований)"},{src:"images/fireworks.png",name:"Сценическая пиротехника",txt:"(29 наименований)"},{src:"images/star.png",name:"Профессиональная пиротехника",txt:"(167+ эффектов)"}]
+-var advantage = [{src:"images/adv01.png",txt:"Наши фабрики в Китае производят под наше ТЗ продукцию"},{src:"images/adv02.png",txt:"Вся продукция проходит лабораторные исследования перед продажей"},{src:"images/adv03.png",txt:"Мы производиv самую широкую линейку петард в РФ"},{src:"images/adv04.png",txt:"У нас партнерские розничные магазины по всему Крыму, мы в постоянном контакте с потребителем"},{src:"images/adv05.png",txt:"Мы создали свой отдел дизайнеров для разработки оригинальных этикеток"},{src:"images/adv06.png",txt:"Представляем большой ассортимент профессиональной пиротехники"}]
 
 <!DOCTYPE html>
 html(lang="ru")
@@ -13,8 +14,9 @@ html(lang="ru")
     include ./modules/header
 
     main.main
-      .wrapper
-        section.info
+
+      section.info
+        .wrapper
           .title-container
             h1.info-head Производитель
               br
@@ -53,7 +55,8 @@ html(lang="ru")
                 |ассортимента на 20%
           button.consult(type="button") Консультация специалиста
 
-        section.new-goods
+      section.new-goods
+        .wrapper
           h2.title Новые поступления
           .container
             button.arr.left(type="button")
@@ -82,7 +85,8 @@ html(lang="ru")
               button.point(type="button")
             li.item
               button.point(type="button")
-        section.assortment
+      section.assortment
+        .wrapper
           h2.title В нашем ассортименте
           .card-container
             each i in assortment
@@ -117,24 +121,27 @@ html(lang="ru")
                       p.txt.txt2 от 16 руб/шт.
           .offer-container
             .offer
-              p.wholesale успей купить
+              .inline
+                p.wholesale успей купить
                  br
                  |
                  span.big оптом
-              .price-container
-                p.name салютная установка
-                p.price от 395₽/шт.
-                p.details *17 видов салютных установок
-                  br
-                  |на 19 выстрелов (0.8-2 калибр)
+                .price-container
+                  p.name салютная установка
+                  p.price от 395₽/шт.
+                  p.details *17 видов салютных установок
+                    br
+                    |на 19 выстрелов (0.8-2 калибр)
 
-              .timer-container
-                p.timer 00 : 13 : 02 : 30
-                p.timer-txt
-                  span.day дней
-                  span.hour часов
-                  span.minutes минут
-                  span.sec секунд
+              .clock
+                .timer-container
+                  p.timer-name До конца акции осталось
+                  p.timer 00 : 13 : 02 : 30
+                  p.timer-txt
+                    span.day дней
+                    span.hour часов
+                    span.minutes минут
+                    span.sec секунд
 
             form.request
               p.form-title Заполните заявку
@@ -144,17 +151,48 @@ html(lang="ru")
                 input.input(type="email" class="form-control" id="name" placeholder="Ваше имя")
               label(for="phone")
               .input-grup
-                .icon
+                .icon.phone
                 input.input(type="email" class="form-control" id="phone" placeholder="Ваш телефон")
               label(for="email")
               .input-grup
-                .icon
+                .icon.email
                 input.input(type="email" class="form-control" id="email" placeholder="Ваш e-mail")
               button.sent(type="sent") Отправить заявку
               p.form-terms
                 input.form-agreement(id="agreement" type="checkbox")
-                label.form__label(for="agreement") Я согласен с условиями обработки персональных данных
+                label.form-label(for="agreement") Я согласен с условиями обработки персональных данных
 
-    include ./modules/footer
+            img.book(src="images/book2.png" alt="img")
+      section.advantage
+        .wrapper
+          h2.advantage-title Наши преимущества
+          .numbers-container
+            p.txt-head цифры говорят
+              br
+              |сами за себя:
+            p.txt-kind
+              span.num 157
+              span.txt видов батареи
+                br
+                |салютов
+            p.txt-kind
+              span.num 289
+              span.txt позиций бытовой
+                br
+                | пиротехники
+            p.txt-kind
+              span.num 2440 м2
+              span.txt собственных складов
+                br
+                | в Москве и Крыму
+        .advantage-container
+          .wrapper
+            ul.advantage-list
+              each i in advantage
+                li.item
+                  img.numbr(src=i.src)
+                  p.txt=i.txt
+
+include ./modules/footer
 
     script(src="js/scripts.js")
