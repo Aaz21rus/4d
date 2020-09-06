@@ -207,7 +207,7 @@ body {
 .header .container {
   display: flex;
   justify-content: space-between;
-  padding: 5px 0 18px 0;
+  padding-top: 16px;
   align-items: center; }
   .header .container .title {
     display: flex;
@@ -230,7 +230,7 @@ body {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      margin-right: 62px;
+      margin-right: 63px;
       justify-content: center; }
       .header .container .visitor-contauner .contact .phone {
         color: #ffffff;
@@ -245,7 +245,7 @@ body {
         line-height: 18px; }
     .header .container .visitor-contauner .btn-grup {
       display: flex;
-      margin-right: 53px; }
+      margin-right: 60px; }
       .header .container .visitor-contauner .btn-grup button {
         width: 206px;
         height: 53px;
@@ -281,12 +281,12 @@ body {
           margin-left: .4em; }
 
 .info {
-  padding: 88px 0 227px 0; }
+  padding: 87px 0 217px 0; }
   .info .title-container {
     display: flex;
-    margin-bottom: 50px; }
+    margin-bottom: 38px; }
     .info .title-container .info-head {
-      margin-right: 75px;
+      margin-right: 70px;
       color: #ffffff;
       font-size: 57px;
       font-weight: 500;
@@ -296,7 +296,8 @@ body {
     .info .title-container .advert-container {
       display: flex;
       flex-direction: column;
-      justify-content: space-between; }
+      justify-content: space-between;
+      padding: 10px 0 8px 0; }
       .info .title-container .advert-container .youtube-container .txt-container {
         display: flex;
         flex-direction: column;
@@ -332,7 +333,7 @@ body {
           font-weight: 300; }
   .info .props-container {
     display: flex;
-    margin-bottom: 38px; }
+    margin-bottom: 29px; }
     .info .props-container .text-container {
       display: flex;
       align-items: center; }
@@ -366,18 +367,17 @@ body {
       background-image: none; }
 
 .new-goods {
-  padding-bottom: 100px; }
+  padding-bottom: 86px; }
   .new-goods .title {
     text-align: center;
-    margin-bottom: 64px;
+    margin-bottom: 59px;
     font-size: 30px;
     font-weight: 500;
     line-height: 46px; }
   .new-goods .container {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    margin-bottom: 32px; }
+    position: relative; }
     .new-goods .container .left {
       left: -24px; }
     .new-goods .container .right {
@@ -397,9 +397,9 @@ body {
         background-color: #f4a968; }
     .new-goods .container .card {
       position: relative;
-      margin-bottom: 32px;
+      margin-bottom: 21px;
       background: #ffffff;
-      padding: 40px;
+      padding: 40px 40px 48px 40px;
       box-shadow: 0 9px 99px 4px rgba(34, 49, 78, 0.07);
       border-radius: 8px;
       border: 1px solid #ebeded;
@@ -418,15 +418,15 @@ body {
         justify-content: center;
         align-items: center;
         height: 258px;
-        margin-bottom: 28px; }
+        margin-bottom: 8px; }
       .new-goods .container .card .name {
-        margin-bottom: 21px;
+        margin-bottom: 11px;
         color: #111111;
         font-size: 24px;
         font-weight: 500;
         line-height: 44.07px; }
       .new-goods .container .card .txt {
-        margin-bottom: 31px;
+        margin-bottom: 30px;
         color: #111111;
         font-family: 'Panton';
         font-size: 16px;
@@ -460,7 +460,7 @@ body {
 .assortment {
   padding-bottom: 255px; }
   .assortment .title {
-    margin-bottom: 60px;
+    margin-bottom: 56px;
     text-align: center;
     color: #111111;
     font-size: 30px;
@@ -479,7 +479,7 @@ body {
       border-radius: 8px;
       border: 1px solid #ebeded;
       background-color: #ffffff;
-      padding: 20px 40px;
+      padding: 26px 40px;
       margin-bottom: 55px; }
       .assortment .card-container .card .img-container {
         display: flex;
@@ -543,3 +543,34 @@ body {
             height: 2px; }
           .assortment .card-container .card .list-assort .item .txt2 {
             font-weight: 700; }
+  .assortment .offer-container {
+    display: flex;
+    justify-content: space-between; }
+    .assortment .offer-container .offer .wholesale {
+      font-size: 55px;
+      font-weight: 500;
+      text-transform: uppercase;
+      line-height: 58px; }
+      .assortment .offer-container .offer .wholesale .big {
+        color: #7ab5bb;
+        font-size: 115px;
+        line-height: 113px; }
+    .assortment .offer-container .offer .price-container .name {
+      margin-bottom: 12px;
+      color: #111111;
+      font-size: 38px;
+      font-weight: 500;
+      line-height: 42px;
+      text-transform: uppercase; }
+    .assortment .offer-container .offer .price-container .price {
+      margin-bottom: 23px;
+      color: #eda961;
+      font-size: 75px;
+      font-weight: 500;
+      line-height: 68px; }
+    .assortment .offer-container .offer .price-container .details {
+      color: #111111;
+      font-family: 'Panton';
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px; }

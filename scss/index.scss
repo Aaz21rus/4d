@@ -14,12 +14,12 @@ body {
 @import "modules/header";
 
 .info {
-  padding: 88px 0 227px 0;
+  padding: 87px 0 217px 0;
   .title-container {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 38px;
     .info-head {
-      margin-right: 75px;
+      margin-right: 70px;
       color: #ffffff;
       font-size: 57px;
       font-weight: 500;
@@ -31,6 +31,7 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      padding: 10px 0 8px 0;
       .youtube-container {
         .txt-container {
           display: flex;
@@ -78,7 +79,7 @@ body {
   }
   .props-container {
     display: flex;
-    margin-bottom: 38px;
+    margin-bottom: 29px;
     .text-container {
       display: flex;
       align-items: center;
@@ -118,10 +119,10 @@ body {
   }
 }
 .new-goods {
-  padding-bottom: 100px;
+  padding-bottom: 86px;
   .title {
     text-align: center;
-    margin-bottom: 64px;
+    margin-bottom: 59px;
     font-size: 30px;
     font-weight: 500;
     line-height: 46px;
@@ -130,7 +131,6 @@ body {
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin-bottom: 32px;
     .left {
       left: -24px;
     }
@@ -154,9 +154,9 @@ body {
     }
     .card {
       position: relative;
-      margin-bottom: 32px;
+      margin-bottom: 21px;
       background: #ffffff;
-      padding: 40px;
+      padding: 40px 40px 48px 40px;
       box-shadow: 0 9px 99px 4px rgba(34, 49, 78, 0.07);
       border-radius: 8px;
       border: 1px solid #ebeded;
@@ -176,19 +176,19 @@ body {
         justify-content: center;
         align-items: center;
         height: 258px;
-        margin-bottom: 28px;
+        margin-bottom: 8px;
         .picture {
         }
       }
       .name {
-        margin-bottom: 21px;
+        margin-bottom: 11px;
         color: #111111;
         font-size: 24px;
         font-weight: 500;
         line-height: 44.07px;
       }
       .txt {
-        margin-bottom: 31px;
+        margin-bottom: 30px;
         color: #111111;
         font-family: 'Panton';
         font-size: 16px;
@@ -233,7 +233,7 @@ body {
 .assortment {
   padding-bottom: 255px;
   .title {
-    margin-bottom: 60px;
+    margin-bottom: 56px;
     text-align: center;
     color: #111111;
     font-size: 30px;
@@ -253,7 +253,7 @@ body {
       border-radius: 8px;
       border: 1px solid #ebeded;
       background-color: #ffffff;
-      padding: 20px 40px;
+      padding: 26px 40px;
       margin-bottom: 55px;
 
       .img-container {
@@ -344,6 +344,64 @@ body {
           .txt2 {
             font-weight: 700;
           }
+        }
+      }
+    }
+  }
+  .offer-container {
+    display: flex;
+    justify-content: space-between;
+    .offer {
+      .wholesale {
+        font-size: 55px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 58px;
+        .big {
+          color: #7ab5bb;
+          font-size: 115px;
+          line-height: 113px;
+        }
+      }
+      .price-container {
+        .name {
+          margin-bottom: 12px;
+          color: #111111;
+          font-size: 38px;
+          font-weight: 500;
+          line-height: 42px;
+          text-transform: uppercase;
+        }
+        .price {
+          margin-bottom: 23px;
+          color: #eda961;
+          font-size: 75px;
+          font-weight: 500;
+          line-height: 68px;
+        }
+        .details {
+          color: #111111;
+          font-family: 'Panton';
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 22px;
+        }
+      }
+      .timer-container {
+        .timer {}
+        .timer-txt {
+          .day {}
+          .hour {}
+          .minutes {}
+          .sec {}
+        }
+      }
+    }
+    .request {
+      .form-title {
+        .input-grup {
+          .icon {}
+          .input {}
         }
       }
     }

@@ -76,8 +76,11 @@ html(lang="ru")
           ul.list
             li.item
               button.point(type="button")
+            li.item
               button.point(type="button")
+            li.item
               button.point(type="button")
+            li.item
               button.point(type="button")
         section.assortment
           h2.title В нашем ассортименте
@@ -112,6 +115,45 @@ html(lang="ru")
                       p.txt Фонтан 1,5 м.
                       .line
                       p.txt.txt2 от 16 руб/шт.
+          .offer-container
+            .offer
+              p.wholesale успей купить
+                 br
+                 |
+                 span.big оптом
+              .price-container
+                p.name салютная установка
+                p.price от 395₽/шт.
+                p.details *17 видов салютных установок
+                  br
+                  |на 19 выстрелов (0.8-2 калибр)
+
+              .timer-container
+                p.timer 00 : 13 : 02 : 30
+                p.timer-txt
+                  span.day дней
+                  span.hour часов
+                  span.minutes минут
+                  span.sec секунд
+
+            form.request
+              p.form-title Заполните заявку
+              label(for="name")
+              .input-grup
+                .icon
+                input.input(type="email" class="form-control" id="name" placeholder="Ваше имя")
+              label(for="name")
+              .input-grup
+                .icon
+                input.input(type="email" class="form-control" id="name" placeholder="Ваш телефон")
+              label(for="name")
+              .input-grup
+                .icon
+                input.input(type="email" class="form-control" id="name" placeholder="Ваш e-mail")
+              button.sent(type="sent") Отправить заявку
+              p.form-terms
+                input.form-agreement(id="agreement" type="checkbox")
+                label.form__label(for="agreement") Я согласен с условиями обработки персональных данных
 
     include ./modules/footer
 
