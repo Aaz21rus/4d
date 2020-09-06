@@ -231,7 +231,7 @@ body {
   }
 }
 .assortment {
-  padding-bottom: 255px;
+  padding-bottom: 294px;
   .title {
     margin-bottom: 56px;
     text-align: center;
@@ -576,5 +576,6 @@ body {
   }
 }
 @import "components/advantage";
-
+@import "components/partneship";
+@import "components/makeorder";
 @import "modules/footer";

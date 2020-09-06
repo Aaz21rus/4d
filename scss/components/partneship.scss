@@ -1,0 +1,97 @@
+.partneship {
+  .partneship-title {
+    margin-bottom: 89px;
+    color: #111111;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 46px;
+  }
+  .condition {
+
+    .line {
+      &:first-child {
+        margin-bottom: 77px;
+      }
+      display: flex;
+      .step-block {
+        display: flex;
+        width: 37%;
+        margin-right: 56px;
+        flex-shrink: 0;
+        .step-container {
+          margin-right: 30px;
+          .step {
+            background: linear-gradient(to bottom, #77cccb 0%, #5b9ea4 72%, #5b9ea4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            white-space: nowrap;
+            color: #eedfc5;
+            font-family: 'Panton';
+            font-size: 75px;
+            font-weight: 900;
+            line-height: 57px;
+          }
+          .reg-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .reg {
+              color: #111111;
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 24px;
+            }
+            .pic {}
+          }
+        }
+        .desc-container {
+          .desc {color: #111111;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            .phone {
+              color: #3a899d;
+              font-family: 'Panton';
+              font-weight: 700;
+              font-size: 26px;
+              line-height: 40px;
+            }
+          }
+        }
+      }
+      .step-block2 {
+        width: 33%;
+      }
+    }
+    .line2 {
+      position: relative;
+      .outcome {
+        .txt-container {
+          padding-left: 50px;
+          padding-top: 10px;
+          .txt {
+            color: #ffffff;
+            font-family: 'Panton';
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 26px;
+          }
+          .txt-big {
+            margin-top: 10px;
+            font-family: 'Panton';
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 45px;
+            text-transform: uppercase;
+          }
+        }
+        .pic {
+          position: absolute;
+          bottom: -24%;
+          right: 0;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 .advantage {
   .advantage-title {
-    margin-bottom: 76px;
+    margin-bottom: 67px;
     text-align: center;
     color: #111111;
     font-size: 34px;
@@ -10,7 +10,8 @@
   .numbers-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 47px;
+    align-items: center;
+    margin-bottom: 38px;
     .txt-head {
       color: #111111;
       font-size: 42px;
@@ -39,7 +40,7 @@
     }
   }
   .advantage-container {
-    padding: 100px 0 90px 0;
+    padding: 100px 0 95px 0;
     background-image: url("../images/background2.png");
     background-repeat: no-repeat;
     background-position: top;
@@ -47,6 +48,7 @@
     .advantage-list {
       display: flex;
       flex-wrap: wrap;
+      margin-bottom: -7px;
       .item {
         width: calc((100% - 204px) / 3);
         display: flex;
