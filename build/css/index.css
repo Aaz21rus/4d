@@ -727,9 +727,94 @@ body {
             width: 9px;
             border-left: 2px solid;
             border-bottom: 2px solid;
-            color: #FE4D2D;
+            color: #ffffff;
             transform: rotate(-45deg); }
     .assortment .offer-container .book {
       position: absolute;
       bottom: -45%;
       right: 29%; }
+
+.advantage .advantage-title {
+  margin-bottom: 76px;
+  text-align: center;
+  color: #111111;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 39px; }
+
+.advantage .numbers-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 47px; }
+  .advantage .numbers-container .txt-head {
+    color: #111111;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 58px;
+    text-transform: uppercase; }
+  .advantage .numbers-container .txt-kind {
+    display: flex;
+    align-items: flex-end; }
+    .advantage .numbers-container .txt-kind .num {
+      margin-right: 20px;
+      color: #5fa7af;
+      font-size: 80px;
+      font-weight: 700;
+      line-height: 69px; }
+    .advantage .numbers-container .txt-kind .txt {
+      color: #111111;
+      font-family: 'Panton';
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0.38px; }
+
+.advantage .advantage-container {
+  padding: 100px 0 90px 0;
+  background-image: url("../images/background2.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover; }
+  .advantage .advantage-container .advantage-list {
+    display: flex;
+    flex-wrap: wrap; }
+    .advantage .advantage-container .advantage-list .item {
+      width: calc((100% - 204px) / 3);
+      display: flex;
+      margin-bottom: 30px;
+      align-items: center; }
+      .advantage .advantage-container .advantage-list .item .txt {
+        color: #ffffff;
+        font-family: "Panton";
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 29px; }
+  .advantage .advantage-container .cup-container {
+    display: flex;
+    align-items: flex-end; }
+    .advantage .advantage-container .cup-container .img {
+      width: 385px;
+      flex-shrink: 0; }
+    .advantage .advantage-container .cup-container .txt-container {
+      display: flex;
+      padding: 71px 45px;
+      background: #ffffff;
+      border-radius: 0 5px 5px 0; }
+      .advantage .advantage-container .cup-container .txt-container .txt {
+        width: 46%;
+        color: #111111;
+        font-family: 'Panton';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 31px; }
+      .advantage .advantage-container .cup-container .txt-container .txt-competetion {
+        margin-right: 90px;
+        padding-left: 116px;
+        background-image: url("../images/family.png");
+        background-repeat: no-repeat;
+        background-position: left; }
+      .advantage .advantage-container .cup-container .txt-container .txt-reward {
+        padding-left: 115px;
+        background-image: url("../images/prise.png");
+        background-repeat: no-repeat;
+        background-position: left; }
