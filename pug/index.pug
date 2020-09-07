@@ -157,7 +157,7 @@ html(lang="ru")
               .input-grup
                 .icon.email
                 input.input(type="email" class="form-control" id="email" placeholder="Ваш e-mail")
-              button.sent(type="sent") Отправить заявку
+              button.sent(type="button") Отправить заявку
               p.form-terms
                 input.form-agreement(id="agreement" type="checkbox")
                 label.form-label(for="agreement") Я согласен с условиями обработки персональных данных
@@ -190,7 +190,7 @@ html(lang="ru")
             ul.advantage-list
               each i in advantage
                 li.item
-                  img.numbr(src=i.src)
+                  img.numbr(src=i.src alt="img")
                   p.txt=i.txt
             .cup-container
               img.img(src="images/cup.png" alt="img")
@@ -207,7 +207,7 @@ html(lang="ru")
                   p.step Шаг 1
                   .reg-container
                     p.reg Регистрация
-                    img.pic(src="images/laptop.png")
+                    img.pic(src="images/laptop.png" alt="img")
                 .desc-container
                   p.desc Зарегистрируйтесь в личном кабинете  или оставьте заявку на нашем сайте (работает онлайн чат, вайбер) или по телефону
                     br
@@ -262,12 +262,12 @@ html(lang="ru")
                 .icon.phone
                 input.input(type="email" class="form-control" id="phone2" placeholder="Ваш телефон")
               .btn-container
-                button.sent(type="sent") Отправить заявку
+                button.sent(type="button") Отправить заявку
                 p.form-terms
                   input.form-agreement(id="agreement2" type="checkbox")
                   label.form-label(for="agreement2") Я согласен с условиями обработки персональных данных
             img.paper(src="images/paper.png" alt="img")
 
-include ./modules/footer
+    include ./modules/footer
 
     script(src="js/scripts.js")

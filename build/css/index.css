@@ -966,7 +966,11 @@ body {
         font-family: 'Panton';
         font-size: 17px;
         font-weight: 400;
-        line-height: 29.36px; }
+        line-height: 29.36px;
+        transition: all .5s; }
+        .makeorder .order .input-container .btn-container .sent:hover {
+          background-color: #519399;
+          background-image: none; }
       .makeorder .order .input-container .btn-container .form-terms {
         display: flex;
         margin-top: 8px;
@@ -1016,3 +1020,43 @@ body {
     position: absolute;
     bottom: -32%;
     left: -11%; }
+
+.footer {
+  padding: 86px 0 36px 0; }
+  .footer .navigation-container {
+    display: flex; }
+    .footer .navigation-container .menu-container {
+      display: flex;
+      justify-content: space-between; }
+      .footer .navigation-container .menu-container .item {
+        margin-bottom: 20px;
+        color: #111111;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px; }
+        .footer .navigation-container .menu-container .item .logo-container {
+          width: 17%;
+          display: flex;
+          align-items: flex-start; }
+          .footer .navigation-container .menu-container .item .logo-container .logo {
+            margin-right: 27px; }
+          .footer .navigation-container .menu-container .item .logo-container .name {
+            color: #777777;
+            font-family: 'Panton';
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px; }
+        .footer .navigation-container .menu-container .item .list-terms {
+          color: #111111;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+          text-decoration: underline; }
+          .footer .navigation-container .menu-container .item .list-terms .terms-item:not(:last-child) {
+            margin-bottom: 20px; }
+        .footer .navigation-container .menu-container .item .contacts-list .contactds-item .adress {
+          color: #111111;
+          font-family: 'Panton';
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px; }

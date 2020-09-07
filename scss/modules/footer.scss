@@ -1,0 +1,70 @@
+.footer{
+  padding: 86px 0 36px 0;
+  .navigation-container {
+    display: flex;
+    .menu-container {
+      display: flex;
+      justify-content: space-between;
+      .item {
+        margin-bottom: 20px;
+        color: #111111;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        .logo-container {
+          width: 17%;
+          display: flex;
+          align-items: flex-start;
+          .logo {
+            margin-right: 27px;
+          }
+          .name {
+            color: #777777;
+            font-family: 'Panton';
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+          }
+        }
+        .catalog-list {
+          .catalog-hgef {}
+          .catalog-item {
+            .item-href {}
+          }
+        }
+        .client-list {
+          .client-href {}
+          .client-item {
+            .item-href {}
+          }
+        }
+        .list-terms {
+          color: #111111;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+          text-decoration: underline;
+          .terms-item {
+            &:not(:last-child) {
+              margin-bottom: 20px;
+            }
+          }
+        }
+        .contacts-list {
+          .contactds-item {
+            .adress {
+              color: #111111;
+              font-family: 'Panton';
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 22px;
+            }
+            .map {}
+            .phone {}
+            .schedule {}
+          }
+        }
+      }
+    }
+  }
+}
