@@ -1,0 +1,84 @@
+.pos {
+  display: none;
+  position: absolute;
+  left: 290px;
+  bottom: -615px;
+  .openmenu-container {
+    border-radius: 0 0 7px 7px;
+    background-color: #ffffff;
+    display: flex;
+    .catalog-list {
+      flex-shrink: 0;
+      width: 350px;
+      padding: 58px 0 100px 57px;
+      .item-catalog {
+        color: #111111;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 52px;
+        &:first-child {
+          color: #3b5176;
+        }
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+        .catalog-href {
+          display: inline-block;
+        }
+      }
+    }
+    .kind-list {
+      flex-shrink: 0;
+      width: 355px;
+      padding: 58px 0 0 54px;
+      background-color: #f6f6f8;
+      .item-kind {
+        color: #111111;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 52px;
+        &:first-child {
+          color: #3b5176;
+        }
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+        .kind-href {
+          display: inline-block;
+        }
+      }
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      padding: 33px 35px 0 58px;
+      .good-list{
+        .item-good {
+          color: #111111;
+          font-family: "Panton";
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 35px;
+          transition: color .5s;
+          &:not(:last-child) {
+            margin-bottom: 15px;
+          }
+          &:hover {
+            color: #3b5176;
+          }
+          .good-href {
+            display: inline-block;
+          }
+        }
+      }
+      .form-container{
+        box-shadow: 0 9px 62px 3px rgba(34, 49, 78, 0.13);
+        .form-order {
+          display: block;
+        }
+      }
+    }
+  }
+}

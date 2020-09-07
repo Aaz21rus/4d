@@ -8,10 +8,12 @@ html(lang="ru")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Document
-    link(rel="stylesheet", href="css/index.css")
+    link(rel="stylesheet", href="css/home.css")
   body
-    include ./modules/icons
-    include ./modules/header
+    include modules/modalorderphone
+    include modules/reg
+    include modules/icons
+    include modules/header
 
     main.main
 
@@ -268,6 +270,6 @@ html(lang="ru")
                   label.form-label(for="agreement2") Я согласен с условиями обработки персональных данных
             img.paper(src="images/paper.png" alt="img")
 
-    include ./modules/footer
+    include modules/footer
 
     script(src="js/scripts.js")

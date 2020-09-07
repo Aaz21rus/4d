@@ -1,0 +1,29 @@
+-var catalog = ["Каталог","О компании","Условия сотрудничества","Материалы для бизнеса","Вопросы и ответы","Инфо-блог","Контакты"]
+-var kind = ["Бытовая пиротехника","Сценическая пиротехника","Профессиональная пиротехника"]
+-var good = ["Петарды","Цветной дым","Летающие фейерверки","Тортовые свечи","Бенгальские огни","Ракеты","Римские свечи","Батареи салютов","Фонтаны","Фестивальные шары"]
+
+.wrapper.pos
+  .openmenu-container
+    ul.catalog-list
+      each i in catalog
+        li.item-catalog
+          a.catalog-href(href="#")=i
+    ul.kind-list
+      each j in kind
+        li.item-kind
+          a.kind-href(href="#")=j
+    .container
+      ul.good-list
+        each k in good
+          li.item-good
+            a.good-href(href="#")=k
+      .form-container
+        include modalorderphone
+
+
+
+
+
+
+
+

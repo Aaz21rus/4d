@@ -7,64 +7,26 @@
     <link rel="stylesheet" href="css/home.css"/>
   </head>
   <body>
-    <form class="form-order">
-      <div class="head-container">
-        <div class="h3-container">
-          <h3 class="order-h3">Заказать звонок</h3>
-        </div>
+    <div class="form-order-container">
+      <form class="form-order">
         <button class="order-close"></button>
-      </div>
-      <label class="order-label" for="order-name"></label>
-      <div class="input-group">
-        <div class="icon"></div>
-        <input class="order-input" type="text" name="name" placeholder="Ваше имя" id="order-name"/>
-      </div>
-      <label class="order-label" for="order-phone"></label>
-      <div class="input-group">
-        <div class="icon phone"></div>
+        <h3 class="order-h3">Заказать звонок</h3>
+        <label class="order-label" for="order-name"></label>
+        <div class="input-group">
+          <div class="icon"></div>
+          <input class="order-input" type="text" name="name" placeholder="Имя" id="order-name"/>
+        </div>
+        <label class="order-label" for="order-phone"></label>
+        <div class="input-group">
+          <div class="icon"></div>
+        </div>
         <input class="order-input" type="text" name="phone" placeholder="Телефон" id="order-phone"/>
-      </div>
-      <p class="order-terms">
-        <input class="order-agreement" id="order-agreement" type="checkbox"/>
-        <label class="order-agree" for="order-agreement">Я согласен с политикой конфиденцильности</label>
-      </p>
-      <input class="order-btn" type="submit" value="Заказать проект" disabled="disabled"/>
-    </form>
-    <div class="form-reg-container">
-      <div class="reg-wrap">
-        <form class="form-order">
-          <div class="head-container">
-            <div class="h3-container">
-              <h3 class="order-h3">Вход в личный кабинет</h3>
-            </div>
-          </div>
-          <label class="order-label" for="password"></label>
-          <div class="input-group">
-            <div class="icon"></div>
-            <input class="order-input" type="text" name="pass" placeholder="Пароль" id="password"/>
-          </div>
-          <label class="order-label" for="email"></label>
-          <div class="input-group">
-            <div class="icon phone"></div>
-            <input class="order-input" type="text" name="email" placeholder="vershinina@mail.ru" id="email"/>
-          </div>
-          <p class="order-terms">
-            <input class="order-agreement" id="reg-agreement" type="checkbox"/>
-            <label class="order-agree" for="reg-agreement">Запомнить меня</label><a class="tex-reg" href="#">Забыли пароль?</a>
-          </p>
-          <input class="order-btn" type="submit" value="Войти"/>
-        </form>
-        <form class="form-order gray">
-          <div class="head-container">
-            <div class="h3-container">
-              <h3 class="order-h3">Заказать звонок</h3>
-            </div>
-            <button class="order-close"></button>
-          </div>
-          <p class="reg-desc">После регистрации на сайте вам будет<br/>доступно отслеживание состояния<br/>заказов, личный кабинет и другие новые возможности.</p>
-          <input class="reg-btn" type="submit" value="Заказать проект"/>
-        </form>
-      </div>
+        <p class="order-terms">
+          <input class="order-agreement" id="order-agreement" type="checkbox"/>
+          <label class="order-agree" for="order-agreement"></label>
+        </p>
+        <input class="order-btn" type="submit" value="Заказать проект" disabled="disabled"/>
+      </form>
     </div>
     <svg display="none">
       <symbol width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="burger">
@@ -102,63 +64,6 @@
               <button class="look" type="button">Смотреть каталог</button>
             </div>
             <div class="guest-panel"><a class="enter" href="#">Вход для клиентов</a><a class="busket" href="#">Товаров<br/>в корзине:<span class="num">0</span></a></div>
-          </div>
-        </div>
-        <div class="wrapper pos">
-          <div class="openmenu-container">
-            <ul class="catalog-list">
-              <li class="item-catalog"><a class="catalog-href" href="#">Каталог</a></li>
-              <li class="item-catalog"><a class="catalog-href" href="#">О компании</a></li>
-              <li class="item-catalog"><a class="catalog-href" href="#">Условия сотрудничества</a></li>
-              <li class="item-catalog"><a class="catalog-href" href="#">Материалы для бизнеса</a></li>
-              <li class="item-catalog"><a class="catalog-href" href="#">Вопросы и ответы</a></li>
-              <li class="item-catalog"><a class="catalog-href" href="#">Инфо-блог</a></li>
-              <li class="item-catalog"><a class="catalog-href" href="#">Контакты</a></li>
-            </ul>
-            <ul class="kind-list">
-              <li class="item-kind"><a class="kind-href" href="#">Бытовая пиротехника</a></li>
-              <li class="item-kind"><a class="kind-href" href="#">Сценическая пиротехника</a></li>
-              <li class="item-kind"><a class="kind-href" href="#">Профессиональная пиротехника</a></li>
-            </ul>
-            <div class="container">
-              <ul class="good-list">
-                <li class="item-good"><a class="good-href" href="#">Петарды</a></li>
-                <li class="item-good"><a class="good-href" href="#">Цветной дым</a></li>
-                <li class="item-good"><a class="good-href" href="#">Летающие фейерверки</a></li>
-                <li class="item-good"><a class="good-href" href="#">Тортовые свечи</a></li>
-                <li class="item-good"><a class="good-href" href="#">Бенгальские огни</a></li>
-                <li class="item-good"><a class="good-href" href="#">Ракеты</a></li>
-                <li class="item-good"><a class="good-href" href="#">Римские свечи</a></li>
-                <li class="item-good"><a class="good-href" href="#">Батареи салютов</a></li>
-                <li class="item-good"><a class="good-href" href="#">Фонтаны</a></li>
-                <li class="item-good"><a class="good-href" href="#">Фестивальные шары</a></li>
-              </ul>
-              <div class="form-container">
-                <form class="form-order">
-                  <div class="head-container">
-                    <div class="h3-container">
-                      <h3 class="order-h3">Заказать звонок</h3>
-                    </div>
-                    <button class="order-close"></button>
-                  </div>
-                  <label class="order-label" for="order-name"></label>
-                  <div class="input-group">
-                    <div class="icon"></div>
-                    <input class="order-input" type="text" name="name" placeholder="Ваше имя" id="order-name"/>
-                  </div>
-                  <label class="order-label" for="order-phone"></label>
-                  <div class="input-group">
-                    <div class="icon phone"></div>
-                    <input class="order-input" type="text" name="phone" placeholder="Телефон" id="order-phone"/>
-                  </div>
-                  <p class="order-terms">
-                    <input class="order-agreement" id="order-agreement" type="checkbox"/>
-                    <label class="order-agree" for="order-agreement">Я согласен с политикой конфиденцильности</label>
-                  </p>
-                  <input class="order-btn" type="submit" value="Заказать проект" disabled="disabled"/>
-                </form>
-              </div>
-            </div>
           </div>
         </div>
       </div>

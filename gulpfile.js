@@ -54,8 +54,6 @@ function css() {
     .pipe(dest('build/css'))
 }
 
-
-
 //
 // JS
 //
@@ -82,8 +80,6 @@ task('webpack', function(callback) {
   })
 })
 
-
-
 //
 // Copy images, fonts
 //
@@ -95,8 +91,6 @@ function copyImg() {
 function copyFonts() {
   return src('fonts/*.*').pipe(dest('build/fonts'))
 }
-
-
 
 //
 // Gulp Watcher
@@ -128,8 +122,6 @@ task('serve', _ => {
 
   bs.watch('build/**/*.*').on('change', bs.reload)
 })
-
-
 
 //
 // TASKS

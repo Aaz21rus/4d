@@ -1,0 +1,32 @@
+.form-reg-container
+  .reg-wrap
+    form.form-order
+      .head-container
+        .h3-container
+          h3.order-h3 Вход в личный кабинет
+      label.order-label(for="password")
+      .input-group
+        .icon
+        input.order-input(type="text" name="pass" placeholder="Пароль" id="password")
+      label.order-label(for="email")
+      .input-group
+        .icon.phone
+        input.order-input(type="text" name="email" placeholder="vershinina@mail.ru" id="email")
+      p.order-terms
+        input.order-agreement(id="reg-agreement" type="checkbox")
+        label.order-agree(for="reg-agreement") Запомнить меня
+        a.tex-reg(href="#") Забыли пароль?
+      input.order-btn(type="submit" value="Войти")
+    form.form-order.gray
+      .head-container
+        .h3-container
+          h3.order-h3 Заказать звонок
+        button.order-close
+      p.reg-desc После регистрации на сайте вам будет
+        br
+        |доступно отслеживание состояния
+        br
+        |заказов, личный кабинет и другие новые возможности.
+      input.reg-btn(type="submit" value="Заказать проект")
+
+
