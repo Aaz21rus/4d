@@ -3,12 +3,13 @@ footer.footer
     nav.navigation-container
       menu.menu-container
         li.item
-          a.logo-container(src="#")
+          a.logo-container(href="#")
             img.logo(src="images/logo-small.png" alt="img")
             p.name Производитель и оптовый поставщик пиротехники в РФ
         li.item
           ul.catalog-list
-            a.catalog-hgef(href="#") Каталог продукции
+            li.catalog-item
+              a.catalog-hgef(href="#") Каталог продукции
             li.catalog-item
               a.item-href(href="#") Бытовая пиротехника
             li.catalog-item
@@ -17,7 +18,10 @@ footer.footer
               a.item-href(href="#") Профессиональная пиротехника
         li.item
           ul.client-list
-            a.client-href(href="#") Информация для клиентов
+            li.client-item
+              a.client-href(href="#") Информация для клиентов
+            li.client-item
+              a.item-href(href="#") О производителе
             li.client-item
               a.item-href(href="#") Вопросы - ответы
             li.client-item
@@ -26,17 +30,56 @@ footer.footer
               a.item-href(href="#") Контактная информация
         li.item
           ul.list-terms
-            li.terms-item Условия сотрудничества
-            li.terms-item Cертификаты
-            li.terms-item Реквизиты
-            li.terms-item Договора
+            li.terms-item
+              a.item-href(href="#") Условия сотрудничества
+            li.terms-item
+              a.item-href(href="#") Cертификаты
+            li.terms-item
+              a.item-href(href="#") Реквизиты
+            li.terms-item
+              a.item-href(href="#") Договора
         li.item
           ul.contacts-list
             li.contactds-item
               p.adress Московская обл, г. Сергиев Посад, шоссе Московское 22
-              a.map(src="#") Показать на карте
+              a.map(href="#") Показать на карте
             li.contactds-item
               a.phone(href="tel:+79100007994") +7 (910) 000-79-93
               p.schedule пн-сб: с 9:00 до 18:00
 
+    .guest-panel
+      a.youtube-href(href="#")
+        p.chanel Наш канал
+          br
+          |
+          span.red YouTube
+      ul.list-load
+        li.load-item
+          a.load-catalog(href="#") Скачать каталог
+          .icon-load
+        li.load-item
+          a.load-catalog(href="#") Скачать прайс
+          .icon-load
+        li.load-item
+          a.load-catalog(href="#") Скачать видео
+          .icon-video
+      ul.payment
+        li.item-payment
+          a.payment-herf(href="")
+            img.pic-payment(src="images/money.png" alt="img")
+        li.item-payment
+          a.payment-herf(href="")
+            img.pic-payment(src="images/kivi.png" alt="img")
+        li.item-payment
+          a.payment-herf(href="")
+            img.pic-payment(src="images/world.png" alt="img")
+      a.email(href="mailto:jokersale@mail.ru") jokersale@mail.ru
+  .rights
+    .wrapper
+      .right-container
+        .blok
+          p.secret Политика конфиденциальности
+          p.year © 2020 Joker Fireworks
+        a.site(href="#")  Разработка сайта:
+          span.site-img
 
