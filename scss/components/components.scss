@@ -2,3 +2,18 @@
   margin: 0 auto;
   width: 1600px;
 }
+.arr {
+  position: absolute;
+  width: 48px;
+  height: 47px;
+  top: calc(50% + 28px);
+  z-index: 1;
+}
+.left {
+  left: -24px;
+  background-image: url("../images/back.png");
+}
+.right {
+  right: -24px;
+  background-image: url("../images/forward.png");
+}

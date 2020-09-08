@@ -1,0 +1,91 @@
+.advertising {
+  padding: 120px 0 0 0;
+  background-image: url("../images/background2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .advantage-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 25px;
+    justify-items: left;
+    align-items: center;
+    .item {
+      display: flex;
+      align-items: center;
+      width: 87%;
+      &:nth-child(7) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+      }
+      &:nth-child(8) {
+        grid-column-start: 3;
+        grid-column-end: 4;
+      }
+      .number {
+        margin-right: 28px;
+      }
+      .txt {
+        color: #ffffff;
+        font-family: 'Panton';
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 29px;
+      }
+    }
+  }
+  .certificate-container {
+    position: relative;
+    padding: 71px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    .cert-head {
+      margin-bottom: 57px;
+      text-align: center;
+      color: #111111;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 40px;
+    }
+    .certificate-swiper {
+      display: flex;
+      justify-content: space-between;
+      .cert-img-container {
+        position: relative;
+        &:hover {
+          //opacity: 0.29;
+          background-color: rgba(0, 0, 0, .3);
+          //background-color: #eeebe4;
+        }
+        &:hover ~ .search {
+          display: block;
+        }
+        .certificate-img {
+
+        }
+        .search {
+          display: none;
+          position: absolute;
+          top: calc(50% - 38px);
+          right: calc(50% - 38px);
+        }
+      }
+    }
+    //.arr {
+    //  position: absolute;
+    //  width: 48px;
+    //  height: 47px;
+    //  top: calc(50% + 28px);
+    //  z-index: 1;
+    //}
+    //.left {
+    //  left: -24px;
+    //  background-image: url("../images/back.png");
+    //}
+    //.right {
+    //  right: -24px;
+    //  background-image: url("../images/forward.png");
+    //}
+  }
+}

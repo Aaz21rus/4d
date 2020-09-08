@@ -1,10 +1,7 @@
--var advantage = [{src:"images/01about.png",txt:"Наши фабрики в Китае производят под наше ТЗ продукцию"},
-{src:"images/02about.png",txt:"Вся продукция проходит лабораторные исследования перед продажей"},
-{src:"images/03about.png",txt:"Мы производиv самую широкую линейку петард в РФ"},
-{src:"images/04about.png",txt:"У нас партнерские розничные магазины по всему Крыму, мы в постоянном контакте с потребителем"},
-{src:"images/05about.png",txt:"Мы создали свой отдел дизайнеров для разработки оригинальных этикеток"},
-{src:"images/06about.png",txt:"Представляем большой ассортимент профессиональной пиротехники"}]
-
+-var advantage = [{src:"images/01about.png",txt:"Работаем с 2014 года по всей России"},{src:"images/02about.png",txt:"Наши фабрики в Китае производят по нашему техническому заданию продукцию."},{src:"images/03about.png",txt:"Вся продукция проходит лабораторные исследования и сертификацию перед продажей."},{src:"images/04about.png",txt:"Широчайший ассортимент бытовой и профессиональной пиротехники."},{src:"images/05about.png",txt:"Мы производим самую широкую линейку петард в РФ."},{src:"images/06about.png",txt:"У нас партнерские розничные магазины по всему Крыму, мы в постоянном контакте с потребителем."},{src:"images/07about.png",txt:"Мы создали свой отдел дизайнеров для оригинальных этикеток."},{src:"images/08about.png",txt:"Наш отдел продаж проходит повышение квалификации каждые 3 месяца."}]
+-var worker = [{src:"images/worker1.png",name:"Антон Касатов",position:"Менеджер по продажам"},{src:"images/worker2.png",name:"Алесксей Иванов",position:"Директор производства"},{src:"images/worker3.png",name:"Анна Петрова",position:"Дизайнер - проектировщик"},{src:"images/worker4.png",name:"Сергей Сидоров",position:"Менеджер по логистике"}]
+-var product = [{src:"images/prodaction1.png",color:"color1",txt:"Проводим маркетинговое исследование, учитываем пожелания клиентов, проводим анализ конкурентов"},{src:"images/prodaction2.png",color:"color2",txt:"Разрабатываем схему изделия,даем техническое задание нескольким нашим производителям."},{src:"images/prodaction3.png",color:"color3",txt:"Изготавливаем образцы на разных фабриках, проводятся отстрелы продукции."},{src:"images/prodaction4.png",color:"no-color",txt:"Проведя тщательный отбор, из множества вариантов выбираем только лучшее изделие."},{src:"images/prodaction5.png",color:"color4",txt:"Получаем видео контроля качества, корректируем и видоизменяем"},{src:"images/prodaction6.png",color:"color5",txt:"Готовый образец изделия проходит лабораторные испытания, сертификацию."},{src:"images/prodaction7.png",color:"color6",txt:"Товар доставляется на центральный склад нашей компании"},{src:"images/prodaction8.png",color:"no-color",txt:"Проводим финальный контроль качества (отстрел), приглашаем клиентов для показа новой продукции."}]
+-var client = ["","","","","","",]
 
 <!DOCTYPE html>
 html(lang="ru")
@@ -100,8 +97,60 @@ html(lang="ru")
           ul.advantage-list
             each i in advantage
               li.item
-                img.numbr(src=i.src alt="img")
+                img.number(src=i.src alt="img")
                 p.txt=i.txt
+          .certificate-container
+            h2.cert-head Сертификаты на продукцию
+            .certificate-swiper
+              .cert-img-container
+                img.certificate-img(src="images/scertificate.png" alt="img")
+                img.search(src="images/search.png")
+              .cert-img-container
+                img.certificate-img(src="images/scertificate.png" alt="img")
+                img.search(src="images/search.png")
+              .cert-img-container
+                img.certificate-img(src="images/scertificate.png" alt="img")
+                img.search(src="images/search.png")
+              .cert-img-container
+                img.certificate-img(src="images/scertificate.png" alt="img")
+                img.search(src="images/search.png")
+              button.arr.left(type="button")
+              button.arr.right(type="button")
+      section.team
+        .wrapper
+          h2.team-head Наша команда
+          ul.team-list
+            each i in worker
+              li.team-card
+                .team-img-container
+                  img.tewm-photo(src=i.src alt="img")
+                p.team-name=i.name
+                p.team-position=i.position
+                .separate
+                button.team-email(type="button") corsar.rk@mail.ru
+            button.arr.left(type="button")
+            button.arr.right(type="button")
+      section.production
+        .wrapper
+          .production-head Этапы производства
+          .production-container
+            each j in product
+              .production-step
+                .prod-img
+                  img.prod-pic(src=j.src)
+                  ul.dot-list
+                    li.dot(class=j.color)
+                    li.dot(class=j.color)
+                    li.dot(class=j.color)
+                    li.dot(class=j.color)
+                    li.dot(class=j.color)
+                    li.dot(class=j.color)
+                p.prod-descp=j.txt
+          .clint-head Наши клиенты
+          ul.client-list
+            each i in client
+              li.list-item
+                p.comp-txt Название компании
       include modules/question
 
     include modules/footer
