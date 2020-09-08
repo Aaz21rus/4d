@@ -1300,101 +1300,144 @@ body {
         background-repeat: no-repeat;
         background-position: left; }
 
-.about .about-head-conatainer {
-  margin-bottom: 77px;
-  padding: 14px 0 21px 38px;
-  box-shadow: 0 9px 99px 4px rgba(34, 49, 78, 0.07);
-  border-radius: 8px;
-  border: 1px solid #ebeded;
-  background-color: #ffffff; }
-  .about .about-head-conatainer .about-head {
-    color: #111111;
-    font-size: 27px;
-    font-weight: 500;
-    line-height: 46px; }
-
-.about .about-company .article-title {
-  margin-bottom: 20px;
-  color: #111111;
-  font-size: 33px;
-  font-weight: 400; }
-
-.about .about-company .article-txt-container {
-  display: flex; }
-  .about .about-company .article-txt-container .column1 {
-    margin-right: 87px; }
-    .about .about-company .article-txt-container .column1 .articl-txt {
+.about {
+  padding-bottom: 65px; }
+  .about .about-head-conatainer {
+    margin-bottom: 77px;
+    padding: 14px 0 21px 38px;
+    box-shadow: 0 9px 99px 4px rgba(34, 49, 78, 0.07);
+    border-radius: 8px;
+    border: 1px solid #ebeded;
+    background-color: #ffffff; }
+    .about .about-head-conatainer .about-head {
       color: #111111;
-      font-family: 'Panton';
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 35px; }
-      .about .about-company .article-txt-container .column1 .articl-txt:not(:last-child) {
-        margin-bottom: 64px; }
-    .about .about-company .article-txt-container .column1 .story-container {
-      display: flex;
-      margin-bottom: 94px; }
-      .about .about-company .article-txt-container .column1 .story-container .art-img-container {
-        position: relative; }
-        .about .about-company .article-txt-container .column1 .story-container .art-img-container .img-txt {
-          display: flex;
-          margin-right: 147px;
-          padding-top: 33px;
-          justify-content: center;
-          width: 383px;
-          height: 240px;
-          background-image: url("../images/back-orange.png");
-          background-repeat: no-repeat;
-          color: #ffffff;
-          font-family: 'Panton';
-          font-size: 19px;
-          font-weight: 700;
-          line-height: 34px;
-          text-transform: uppercase; }
-        .about .about-company .article-txt-container .column1 .story-container .art-img-container .storage {
-          position: absolute;
-          bottom: 0;
-          right: 87px; }
-      .about .about-company .article-txt-container .column1 .story-container .year-container .year-event:not(:last-child) {
-        margin-bottom: 27px; }
-      .about .about-company .article-txt-container .column1 .story-container .year-container .year-event .year {
-        margin-bottom: 2px;
-        color: #ef9b3d;
-        font-size: 23px;
+      font-size: 27px;
+      font-weight: 500;
+      line-height: 46px; }
+  .about .about-company .article-title {
+    margin-bottom: 20px;
+    color: #111111;
+    font-size: 33px;
+    font-weight: 400; }
+  .about .about-company .article-txt-container {
+    display: flex;
+    margin-bottom: 60px; }
+    .about .about-company .article-txt-container .column1 {
+      margin-right: 87px; }
+      .about .about-company .article-txt-container .column1 .articl-txt {
+        color: #111111;
+        font-family: 'Panton';
+        font-size: 16px;
         font-weight: 400;
-        line-height: 31px;
-        text-transform: uppercase; }
-      .about .about-company .article-txt-container .column1 .story-container .year-container .year-event .event-name {
+        line-height: 35px; }
+        .about .about-company .article-txt-container .column1 .articl-txt:not(:last-child) {
+          margin-bottom: 64px; }
+      .about .about-company .article-txt-container .column1 .story-container {
+        display: flex;
+        margin-bottom: 94px; }
+        .about .about-company .article-txt-container .column1 .story-container .art-img-container {
+          position: relative; }
+          .about .about-company .article-txt-container .column1 .story-container .art-img-container .img-txt {
+            display: flex;
+            margin-right: 147px;
+            padding-top: 33px;
+            justify-content: center;
+            width: 383px;
+            height: 240px;
+            background-image: url("../images/back-orange.png");
+            background-repeat: no-repeat;
+            color: #ffffff;
+            font-family: 'Panton';
+            font-size: 19px;
+            font-weight: 700;
+            line-height: 34px;
+            text-transform: uppercase; }
+          .about .about-company .article-txt-container .column1 .story-container .art-img-container .storage {
+            position: absolute;
+            bottom: 0;
+            right: 87px; }
+        .about .about-company .article-txt-container .column1 .story-container .year-container .year-event:not(:last-child) {
+          margin-bottom: 27px; }
+        .about .about-company .article-txt-container .column1 .story-container .year-container .year-event .year {
+          margin-bottom: 2px;
+          color: #ef9b3d;
+          font-size: 23px;
+          font-weight: 400;
+          line-height: 31px;
+          text-transform: uppercase; }
+        .about .about-company .article-txt-container .column1 .story-container .year-container .year-event .event-name {
+          font-family: 'Panton';
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 31px;
+          text-transform: uppercase; }
+    .about .about-company .article-txt-container .column2 {
+      width: 36%;
+      flex-shrink: 0; }
+      .about .about-company .article-txt-container .column2 .show-container {
+        height: 490px;
+        position: relative;
+        margin-bottom: 69px; }
+        .about .about-company .article-txt-container .column2 .show-container .show {
+          position: absolute;
+          bottom: -114px;
+          left: 0; }
+      .about .about-company .article-txt-container .column2 .articl-txt {
+        margin-bottom: 24px;
+        color: #111111;
         font-family: 'Panton';
         font-size: 18px;
-        font-weight: 700;
-        line-height: 31px;
-        text-transform: uppercase; }
-  .about .about-company .article-txt-container .column2 {
-    width: 36%;
-    flex-shrink: 0; }
-    .about .about-company .article-txt-container .column2 .show-container {
-      height: 490px;
-      position: relative;
-      margin-bottom: 69px; }
-      .about .about-company .article-txt-container .column2 .show-container .show {
-        position: absolute;
-        bottom: -114px;
-        left: 0; }
-    .about .about-company .article-txt-container .column2 .articl-txt {
-      margin-bottom: 40px;
-      color: #111111;
+        font-weight: 400;
+        line-height: 35px; }
+      .about .about-company .article-txt-container .column2 .pic-logo-container {
+        height: 250px;
+        position: relative; }
+        .about .about-company .article-txt-container .column2 .pic-logo-container .pic-logo {
+          position: absolute;
+          bottom: 0;
+          left: 0; }
+  .about .art-btn-grup {
+    display: flex;
+    margin-bottom: 100px; }
+    .about .art-btn-grup .art-btn {
+      width: 324px;
+      height: 73px;
+      border-radius: 4px;
+      background-image: linear-gradient(to bottom, #efe4b7 0%, #f5bd72 72%, #f5bd72 100%);
+      color: #ffffff;
       font-family: 'Panton';
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 400;
-      line-height: 35px; }
-    .about .about-company .article-txt-container .column2 .pic-logo-container {
-      height: 250px;
-      position: relative; }
-      .about .about-company .article-txt-container .column2 .pic-logo-container .pic-logo-container {
-        position: absolute;
-        bottom: 0;
-        left: 0; }
+      line-height: 18px; }
+      .about .art-btn-grup .art-btn:first-child {
+        margin-right: 20px; }
+      .about .art-btn-grup .art-btn:hover {
+        background-image: linear-gradient(to bottom, #77cccb 0%, #5b9ea4 72%, #5b9ea4 100%); }
+  .about .numbers-about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+    .about .numbers-about-container .txt-head {
+      color: #111111;
+      font-size: 42px;
+      font-weight: 500;
+      line-height: 58px;
+      text-transform: uppercase; }
+    .about .numbers-about-container .txt-kind {
+      display: flex;
+      align-items: flex-end; }
+      .about .numbers-about-container .txt-kind .num {
+        margin-right: 25px;
+        color: #eca85f;
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 69px; }
+      .about .numbers-about-container .txt-kind .txt {
+        color: #111111;
+        font-family: 'Panton';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px; }
 
 .partneship .partneship-title {
   margin-bottom: 89px;

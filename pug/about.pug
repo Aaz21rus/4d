@@ -1,3 +1,11 @@
+-var advantage = [{src:"images/01about.png",txt:"Наши фабрики в Китае производят под наше ТЗ продукцию"},
+{src:"images/02about.png",txt:"Вся продукция проходит лабораторные исследования перед продажей"},
+{src:"images/03about.png",txt:"Мы производиv самую широкую линейку петард в РФ"},
+{src:"images/04about.png",txt:"У нас партнерские розничные магазины по всему Крыму, мы в постоянном контакте с потребителем"},
+{src:"images/05about.png",txt:"Мы создали свой отдел дизайнеров для разработки оригинальных этикеток"},
+{src:"images/06about.png",txt:"Представляем большой ассортимент профессиональной пиротехники"}]
+
+
 <!DOCTYPE html>
 html(lang="ru")
   head
@@ -23,7 +31,6 @@ html(lang="ru")
         .wrapper
           .about-head-conatainer
             h2.about-head О компании
-
           article.about-company
             h3.article-title Торговая марка «Джокер файерворкс» - как это было.
             .article-txt-container
@@ -64,7 +71,7 @@ html(lang="ru")
                   img.show(src="images/show.png" alt="img")
                 p.articl-txt Бытовая пиротехника в это время тоже не оставалась без внимания. Параллельно с оптовыми поставками была создана своя розничная сеть, и именно это позволило к профессиональному диалогу с крупными оптовыми клиентами, добавить мнение о нашей продукции простых покупателей. Мы стали более клиентоориентированными, улучшили качество и гибко реагировали на потребности рынка.
                 .pic-logo-container
-                  img.pic-logo-container(src="images/pic-logo.png" alt="img")
+                  img.pic-logo(src="images/pic-logo.png" alt="img")
           .art-btn-grup
             button.art-btn(type="button") Смотреть каталог
             button.art-btn(type="button") Скачать прайс
@@ -88,6 +95,13 @@ html(lang="ru")
                 br
                 | складов
 
+      section.advertising
+        .wrapper
+          ul.advantage-list
+            each i in advantage
+              li.item
+                img.numbr(src=i.src alt="img")
+                p.txt=i.txt
       include modules/question
 
     include modules/footer
