@@ -12,6 +12,7 @@ body {
 
 //components
 @import "components/components";
+@import "components/navigation";
 
 //modules
 @import "modules/reg";
@@ -581,6 +582,7 @@ body {
   }
 }
 @import "components/advantage";
+@import "components/about-company";
 @import "components/partneship";
 @import "components/makeorder";
 @import "modules/footer";
