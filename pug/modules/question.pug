@@ -1,0 +1,24 @@
+section.makeorder
+  .wrapper
+    h2.title-contact У Вас остались вопросы? Задайте их прямо сейчас!
+    form.order
+      p.form-title Наши специалисты дадут профессиональную консультацию по любым вопросам, и, по запросу, мы отправим прайс на нашу продукцию
+      .input-container
+        label(for="name2")
+        .input-grup
+          .icon
+          input.input(type="email" class="form-control" id="name2" placeholder="Ваше имя")
+        label(for="email2")
+        .input-grup
+          .icon.email
+          input.input(type="email" class="form-control" id="email2" placeholder="Ваш e-mail")
+        label(for="phone2")
+        .input-grup
+          .icon.phone
+          input.input(type="email" class="form-control" id="phone2" placeholder="Ваш телефон")
+        .btn-container
+          button.sent(type="button") Отправить заявку
+          p.form-terms
+            input.form-agreement(id="agreement2" type="checkbox")
+            label.form-label(for="agreement2") Я согласен с условиями обработки персональных данных
+      img.paper(src="images/paper.png" alt="img")

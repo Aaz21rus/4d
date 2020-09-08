@@ -7,29 +7,31 @@
     <link rel="stylesheet" href="css/home.css"/>
   </head>
   <body>
-    <form class="form-order">
-      <div class="head-container">
-        <div class="h3-container">
-          <h3 class="order-h3">Заказать звонок</h3>
+    <div class="form-order-container">
+      <form class="form-order">
+        <div class="head-container">
+          <div class="h3-container">
+            <h3 class="order-h3">Заказать звонок</h3>
+          </div>
+          <button class="order-close"></button>
         </div>
-        <button class="order-close"></button>
-      </div>
-      <label class="order-label" for="order-name"></label>
-      <div class="input-group">
-        <div class="icon"></div>
-        <input class="order-input" type="text" name="name" placeholder="Ваше имя" id="order-name"/>
-      </div>
-      <label class="order-label" for="order-phone"></label>
-      <div class="input-group">
-        <div class="icon phone"></div>
-        <input class="order-input" type="text" name="phone" placeholder="Телефон" id="order-phone"/>
-      </div>
-      <p class="order-terms">
-        <input class="order-agreement" id="order-agreement" type="checkbox"/>
-        <label class="order-agree" for="order-agreement">Я согласен с политикой конфиденцильности</label>
-      </p>
-      <input class="order-btn" type="submit" value="Заказать проект" disabled="disabled"/>
-    </form>
+        <label class="order-label" for="order-name"></label>
+        <div class="input-group">
+          <div class="icon"></div>
+          <input class="order-input" type="text" name="name" placeholder="Ваше имя" id="order-name"/>
+        </div>
+        <label class="order-label" for="order-phone"></label>
+        <div class="input-group">
+          <div class="icon phone"></div>
+          <input class="order-input" type="text" name="phone" placeholder="Телефон" id="order-phone"/>
+        </div>
+        <p class="order-terms">
+          <input class="order-agreement" id="order-agreement" type="checkbox"/>
+          <label class="order-agree" for="order-agreement">Я согласен с политикой конфиденцильности</label>
+        </p>
+        <input class="order-btn" type="submit" value="Заказать проект" disabled="disabled"/>
+      </form>
+    </div>
     <div class="form-reg-container">
       <div class="reg-wrap">
         <form class="form-order">
@@ -59,7 +61,7 @@
             <div class="h3-container">
               <h3 class="order-h3">Заказать звонок</h3>
             </div>
-            <button class="order-close"></button>
+            <button class="order-close reg-close"></button>
           </div>
           <p class="reg-desc">После регистрации на сайте вам будет<br/>доступно отслеживание состояния<br/>заказов, личный кабинет и другие новые возможности.</p>
           <input class="reg-btn" type="submit" value="Заказать проект"/>
@@ -84,24 +86,26 @@
         </g>
       </symbol>
     </svg>
-    <header class="header">
-      <div class="wrapper">
-        <div class="container">
-          <div class="title">
-            <button class="burger" type="button">
-              <svg class="icon-burger" width="24" height="20" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#burger"></use>
-              </svg>
-            </button><img class="logo" src="images/logo.png" alt="img"/>
-            <p class="name">Joker Fireworks</p>
-          </div>
-          <div class="visitor-contauner">
-            <div class="contact"><a class="phone" href="tel:+79100007994">+7 (910) 000-79-94</a><a class="back-call" href="#">Обратный звонок</a></div>
-            <div class="btn-grup">
-              <button class="download" type="button">Скачать прайс</button>
-              <button class="look" type="button">Смотреть каталог</button>
+    <div class="small-back">
+      <header class="header">
+        <div class="wrapper">
+          <div class="container">
+            <div class="title">
+              <button class="burger" type="button">
+                <svg class="icon-burger" width="24" height="20" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#burger"></use>
+                </svg>
+              </button><img class="logo" src="images/logo.png" alt="img"/>
+              <p class="name">Joker Fireworks</p>
             </div>
-            <div class="guest-panel"><a class="enter" href="#">Вход для клиентов</a><a class="busket" href="#">Товаров<br/>в корзине:<span class="num">0</span></a></div>
+            <div class="visitor-contauner">
+              <div class="contact"><a class="phone" href="tel:+79100007994">+7 (910) 000-79-94</a><a class="back-call" href="#">Обратный звонок</a></div>
+              <div class="btn-grup">
+                <button class="download" type="button">Скачать прайс</button>
+                <button class="look" type="button">Смотреть каталог</button>
+              </div>
+              <div class="guest-panel"><a class="enter" href="#">Вход для клиентов</a><a class="busket" href="#">Товаров<br/>в корзине:<span class="num">0</span></a></div>
+            </div>
           </div>
         </div>
         <div class="wrapper pos">
@@ -155,14 +159,14 @@
                     <input class="order-agreement" id="order-agreement" type="checkbox"/>
                     <label class="order-agree" for="order-agreement">Я согласен с политикой конфиденцильности</label>
                   </p>
-                  <input class="order-btn" type="submit" value="Заказать проект" disabled="disabled"/>
+                  <input class="order-btn" type="submit" value="Отправить заявку" disabled="disabled"/>
                 </form>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </div>
     <main class="main">
       <section class="info">
         <div class="wrapper">
@@ -379,17 +383,17 @@
               <label for="name"></label>
               <div class="input-grup">
                 <div class="icon"></div>
-                <input class="input form-control" type="email" id="name" placeholder="Ваше имя"/>
+                <input class="input form-control" type="text" id="name" placeholder="Ваше имя"/>
               </div>
               <label for="phone"></label>
               <div class="input-grup">
                 <div class="icon phone"></div>
-                <input class="input form-control" type="email" id="phone" placeholder="Ваш телефон"/>
+                <input class="input form-control" type="text" id="phone" placeholder="Ваш телефон"/>
               </div>
-              <label for="email"></label>
+              <label for="email-order"></label>
               <div class="input-grup">
                 <div class="icon email"></div>
-                <input class="input form-control" type="email" id="email" placeholder="Ваш e-mail"/>
+                <input class="input form-control" type="email" id="email-order" placeholder="Ваш e-mail"/>
               </div>
               <button class="sent" type="button">Отправить заявку</button>
               <p class="form-terms">

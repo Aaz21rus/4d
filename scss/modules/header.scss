@@ -1,5 +1,9 @@
 .header {
   position: relative;
+  .small-back {
+    background-image: url("../images/back-small-header.png");
+    background-size: cover;
+  }
   .container {
     display: flex;
     justify-content: space-between;
@@ -91,6 +95,9 @@
         }
       }
     }
+  }
+  .small {
+    padding: 5px 0 18px 0;
   }
   @import "openmenu";
 }

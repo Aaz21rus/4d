@@ -18,7 +18,23 @@
           li.item-good
             a.good-href(href="#")=k
       .form-container
-        include modalorderphone
+        form.form-order
+          .head-container
+            .h3-container
+              h3.order-h3 Заказать звонок
+            button.order-close
+          label.order-label(for="order-name")
+          .input-group
+            .icon
+            input.order-input(type="text" name="name" placeholder="Ваше имя" id="order-name")
+          label.order-label(for="order-phone")
+          .input-group
+            .icon.phone
+            input.order-input(type="text" name="phone" placeholder="Телефон" id="order-phone")
+          p.order-terms
+            input.order-agreement(id="order-agreement" type="checkbox")
+            label.order-agree(for="order-agreement") Я согласен с политикой конфиденцильности
+          input.order-btn(type="submit" value="Отправить заявку" disabled="disabled")
 
 
 

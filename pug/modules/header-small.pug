@@ -1,0 +1,24 @@
+header.header
+  .small-back
+    .wrapper
+      .container.small
+        .title
+          button.burger(type="button")
+            svg.icon-burger(width="24" height="20" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg")
+              use(xlink:href="#burger")
+          img.logo(src="images/logo.png" alt="img")
+          p.name Joker Fireworks
+        .visitor-contauner
+          .contact
+            a.phone(href="tel:+79100007994") +7 (910) 000-79-94
+            a.back-call(href="#") Обратный звонок
+          .btn-grup
+            button.download(type="button") Скачать прайс
+            button.look(type="button") Смотреть каталог
+          .guest-panel
+            a.enter(href="#") Вход для клиентов
+            a.busket(href="#") Товаров
+              br
+              |в корзине:
+              span.num 0
+    include openmenu

@@ -6,13 +6,16 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
+.noback {
+  background-image: none;
+}
 
 //components
 @import "components/components";
 
 //modules
 @import "modules/reg";
-@import "modules/modalorderphone";
+@import "modules/modalphone";
 @import "modules/header";
 
 .info {

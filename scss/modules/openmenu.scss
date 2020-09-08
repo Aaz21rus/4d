@@ -1,8 +1,10 @@
 .pos {
   display: none;
+  //display: block;
   position: absolute;
-  left: 290px;
-  bottom: -615px;
+  left: 162px;
+  bottom: -510px;
+  z-index: 1;
   .openmenu-container {
     border-radius: 0 0 7px 7px;
     background-color: #ffffff;
@@ -10,7 +12,7 @@
     .catalog-list {
       flex-shrink: 0;
       width: 350px;
-      padding: 58px 0 100px 57px;
+      padding: 40px 0 0 57px;
       .item-catalog {
         color: #111111;
         font-size: 21px;
@@ -18,9 +20,6 @@
         line-height: 52px;
         &:first-child {
           color: #3b5176;
-        }
-        &:not(:last-child) {
-          margin-bottom: 30px;
         }
         .catalog-href {
           display: inline-block;
@@ -30,18 +29,15 @@
     .kind-list {
       flex-shrink: 0;
       width: 355px;
-      padding: 58px 0 0 54px;
+      padding: 40px 0 0 54px;
       background-color: #f6f6f8;
       .item-kind {
         color: #111111;
-        font-size: 21px;
-        font-weight: 500;
-        line-height: 52px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 47px;
         &:first-child {
           color: #3b5176;
-        }
-        &:not(:last-child) {
-          margin-bottom: 30px;
         }
         .kind-href {
           display: inline-block;
@@ -53,7 +49,7 @@
       justify-content: space-between;
       align-items: flex-start;
       width: 100%;
-      padding: 33px 35px 0 58px;
+      padding: 49px 35px 35px 58px;
       .good-list{
         .item-good {
           color: #111111;
@@ -62,9 +58,6 @@
           font-weight: 300;
           line-height: 35px;
           transition: color .5s;
-          &:not(:last-child) {
-            margin-bottom: 15px;
-          }
           &:hover {
             color: #3b5176;
           }
@@ -75,10 +68,50 @@
       }
       .form-container{
         box-shadow: 0 9px 62px 3px rgba(34, 49, 78, 0.13);
+        @import "modalorderphone";
         .form-order {
-          display: block;
+          padding-bottom: 68px;
+          height: 100%;
+          .head-container {
+            margin-bottom: 20px;
+            .order-close {
+              display: none;
+            }
+            .order-h3 {
+              margin-top: 0;
+            }
+          }
+          .order-agree {
+            &:after {
+              display: inline-block;
+              position: absolute;
+              content: '';
+              width: 6px;
+              height: 3px;
+              border-left: 1px solid;
+              border-bottom: 1px solid;
+              color: #FFFFFF;
+              transform: rotate(-45deg);
+              left: -21px;
+              bottom: 7px;
+            }
+          }
+          .input-group {
+            width: 100%;
+            margin-bottom: 20px;
+          }
         }
+        //.form-order {
+        //  display: block;
+        //}
       }
     }
   }
+}
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }
