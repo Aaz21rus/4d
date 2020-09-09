@@ -1,4 +1,8 @@
 -var cat = ["категории","Петарды","Ракеты","Свечи","Фонтаны","Фаеры"]
+-var battery = [{id:"checkbox1",txt:"Малые батареи"},{id:"checkbox2",txt:"Средние батареи"},{id:"checkbox3",txt:"Крупные батареи"},{id:"checkbox4",txt:"Комбинированные"},]
+-var num = [{id:"checkbox1",txt:"0.2"},{id:"checkbox2",txt:"0.8"},{id:"checkbox3",txt:"1"},{id:"checkbox4",txt:"1.2"},{id:"checkbox4",txt:"1.6"},{id:"checkbox4",txt:"2"}]
+-var pack = [{id:"checkbox1",txt:"Бумага"},{id:"checkbox2",txt:"Картон"}]
+-var card = [{txt:"Салютная установка JFC\n" +"br\n"+"|30-16/02 \"Рио\" 10/1",src:"images/good1.png"},{txt:"Салютная установка\n" +"br\n"+"Отожгем! JF C30-19 V1"+"br\n"+"6/1",src:"images/good2.png"},{txt:"Салютная установка JFC\n" +"br\n"+"30-25/03 С Наступающим"+"br\n"+"4/1",src:"images/good2.png"}]
 
 <!DOCTYPE html>
 html(lang="ru")
@@ -39,7 +43,126 @@ html(lang="ru")
                         div.green-squre
                         p.cat=i
                       .cat-arr
+            .choose-cat-nav
+              .cat-nav-wrapper
+                .cat-nav-container
+                  p.cat-head.param параметры
+                  button.cat-nav-open -
+                .cat-line
+              ul.list-param
+                li.param-item
+                  .item-container
+                    p.parm-name размер батареи
+                    button.cat-nav-open -
+                  ul.checkbox-list
+                    each i in battery
+                      li.check-item
+                        p.order-terms
+                          input.order-agreement(id=i.id type="checkbox")
+                          label.order-agree(for=i.id)=i.txt
+                    .cat-line
+                li.param-item
+                  .item-container
+                    p.parm-name цена
+                    button.cat-nav-open -
+                  .slidecontainer
+                    input.slider(type="range" min="1" max="100" value="50" id="myRange")
+                  .input-gr-prise
+                    label.prise-from(for="from") От
+                    input.prise-input(id="from" type="text")
+                  .input-gr-prise
+                    label.prise-from(for="to") До
+                    input.prise-input(id="to" type="text")
+                  .cat-line
+                li.param-item
+                  .item-container
+                    p.parm-name калибр
+                    button.cat-nav-open -
+                  ul.checkbox-list
+                    each i in num
+                      li.check-item
+                        p.order-terms
+                          input.order-agreement(id=i.id type="checkbox")
+                          label.order-agree(for=i.id)=i.txt
+                        .show-block
+                          p.show-txt Выбрано: 34
+                          a.look(href="#") показать
+                  .cat-line
+                li.param-item
+                  .item-container
+                    p.parm-name дальность выстрела
+                    button.cat-nav-open -
+                  .cat-line
+                li.param-item
+                  .item-container
+                    p.parm-name тип упаковки
+                    button.cat-nav-open -
+
+                  ul.checkbox-list
+                    each i in pack
+                      li.check-item
+                        p.order-terms
+                          input.order-agreement(id=i.id type="checkbox")
+                          label.order-agree(for=i.id)=i.txt
+                  .cat-line
+              .btn-grup
+                button.param-btn(type="button") Сбросить
+                button.param-btn(type="button") Показать
           section.goods
+            .about-head-conatainer
+              h2.about-head Батареи салютов
+                span.num (43)
+            .card-container
+              each i in card
+                a.card(href="#")
+                  img.new(src="images/new.png" alt="img")
+                  .head-container
+                    p.head-name=i.txt
+                    .movie-contauner
+                      img.move(src="images/movie.png" alt="img")
+                  .good-container
+                    .arr-l
+                    img.img(src=i.src alt="img")
+                    .arr-r
+                  .salut-container
+                    img.salut(src="images/salut1.png")
+                    img.salut(src="images/salut2.png")
+                    img.salut(src="images/salut3.png")
+                    img.salut(src="images/salut4.png")
+                  .props-container
+                    .shoot 25
+                    .effect 5
+                    .rad 0.2
+                  .line
+                  .bottom-container
+                    .btn-prise Узнать цену
+                    img.btn-bar(src="images/icon-bar.png" alt="img")
+                    img.btn-basket(src="images/icon-basket-card.png" alt="img")
+
+            .about-head-conatainer
+              .sort-container
+                p.soret-txt Сортировать по:
+                ul.sort-list
+                  li.sort
+                    p.s-txt популярности
+                    .sort-arr
+                  li.sort
+                    p.s-txt новинкам
+                    .sort-arr
+                  li.sort
+                    p.s-txt цене
+                    .sort-arr
+                  li.sort
+                    p.s-txt наличию
+                    .sort-arr.up
+              .sort-view
+                p.view-txt Вид
+                ul.sort-list
+                  li.block4
+                  li.row2
+                  li.row4
+
+
       include modules/partneship
       include modules/question
 
