@@ -1,0 +1,49 @@
+-var cat = ["категории","Петарды","Ракеты","Свечи","Фонтаны","Фаеры"]
+
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+    link(rel="stylesheet", href="css/home.css")
+  body.noback
+    include modules/modalphone
+    include modules/reg
+    include modules/icons
+    include modules/header-small
+
+    main.main
+      .wrapper
+        .nav-container
+          p.nav-txt
+            a.nav-txt-href(href="#") Главная
+            span.slash /
+            a.nav-txt-href(href="#") Каталог
+            span.slash /
+            a.choise(href="#") Батареи салютов
+
+        .category-wrapper
+          aside.car-wrap
+            .choose-cat-nav
+              .cat-nav-wrapper
+                .cat-nav-container
+                  p.cat-head категории
+                  button.cat-nav-open -
+                div.cat-line
+              ul.list-cat
+                each i in cat
+                  li.cat-item
+                    a.cat-href(href="#")
+                      .cat-txt-container
+                        div.green-squre
+                        p.cat=i
+                      .cat-arr
+          section.goods
+      include modules/partneship
+      include modules/question
+
+
+    include modules/footer
+
+    script(src="js/scripts.js")

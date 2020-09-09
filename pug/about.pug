@@ -104,16 +104,20 @@ html(lang="ru")
             .certificate-swiper
               .cert-img-container
                 img.certificate-img(src="images/scertificate.png" alt="img")
-                img.search(src="images/search.png")
+                .shadow-window
+                  img.search(src="images/search.png" alt="img")
               .cert-img-container
                 img.certificate-img(src="images/scertificate.png" alt="img")
-                img.search(src="images/search.png")
+                .shadow-window
+                  img.search(src="images/search.png" alt="img")
               .cert-img-container
                 img.certificate-img(src="images/scertificate.png" alt="img")
-                img.search(src="images/search.png")
+                .shadow-window
+                  img.search(src="images/search.png" alt="img")
               .cert-img-container
                 img.certificate-img(src="images/scertificate.png" alt="img")
-                img.search(src="images/search.png")
+                .shadow-window
+                  img.search(src="images/search.png" alt="img")
               button.arr.left(type="button")
               button.arr.right(type="button")
       section.team
@@ -127,17 +131,17 @@ html(lang="ru")
                 p.team-name=i.name
                 p.team-position=i.position
                 .separate
-                button.team-email(type="button") corsar.rk@mail.ru
-            button.arr.left(type="button")
-            button.arr.right(type="button")
+                .team-email corsar.rk@mail.ru
+                .arr.left
+                .arr.right
       section.production
         .wrapper
-          .production-head Этапы производства
+          h2.production-head Этапы производства
           .production-container
             each j in product
               .production-step
                 .prod-img
-                  img.prod-pic(src=j.src)
+                  img.prod-pic(src=j.src alt="img")
                   ul.dot-list
                     li.dot(class=j.color)
                     li.dot(class=j.color)
@@ -146,12 +150,39 @@ html(lang="ru")
                     li.dot(class=j.color)
                     li.dot(class=j.color)
                 p.prod-descp=j.txt
-          .clint-head Наши клиенты
+          h2.clint-head Наши клиенты
           ul.client-list
             each i in client
               li.list-item
                 p.comp-txt Название компании
-      include modules/question
+      section.partner
+        .wrapper
+          h2.partner-head Отзывы партнёров
+          .partner-container
+            .partner-card
+              img.partner-img(src="images/partner1.png" alt="img")
+              .partner-txt-container
+                p.partner-name Александр Иванов, директор
+                p.partner-txt Выражаем признательность команде «JR-Pyro» за профессионализм и оперативность качественного подбора профессиональной пиротехники. Ваша компания зарекомендовала себя надежным деловым партнером.
+                a.prtner-email(href="#") vk.com/pyro_shop
+            .partner-card
+              img.partner-img(src="images/partner2.png" alt="img")
+              .partner-txt-container
+                p.partner-name Александр Иванов, директор
+                p.partner-txt Выражаем признательность команде «JR-Pyro» за профессионализм и оперативность качественного подбора профессиональной пиротехники. Ваша компания зарекомендовала себя надежным деловым партнером.
+                a.prtner-email(href="#") vk.com/pyro_shop
+          ul.list-btn
+            li.item
+              button.btn-dot(type="button")
+            li.item
+              button.btn-dot(type="button")
+            li.item
+              button.btn-dot(type="button")
+            li.item
+              button.btn-dot(type="button")
+            li.item
+              button.btn-dot(type="button")
+    include modules/question
 
     include modules/footer
 

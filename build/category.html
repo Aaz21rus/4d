@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/home.css"/>
+  </head>
+  <body class="noback">
+    <div class="form-order-container">
+      <form class="form-order">
+        <div class="head-container">
+          <div class="h3-container">
+            <h3 class="order-h3">Заказать звонок</h3>
+          </div>
+          <button class="order-close"></button>
+        </div>
+        <label class="order-label" for="order-name"></label>
+        <div class="input-group">
+          <div class="icon"></div>
+          <input class="order-input" type="text" name="name" placeholder="Ваше имя" id="order-name"/>
+        </div>
+        <label class="order-label" for="order-phone"></label>
+        <div class="input-group">
+          <div class="icon phone"></div>
+          <input class="order-input" type="text" name="phone" placeholder="Телефон" id="order-phone"/>
+        </div>
+        <p class="order-terms">
+          <input class="order-agreement" id="order-agreement" type="checkbox"/>
+          <label class="order-agree" for="order-agreement">Я согласен с политикой конфиденцильности</label>
+        </p>
+        <input class="order-btn" type="submit" value="Заказать проект" disabled="disabled"/>
+      </form>
+    </div>
+    <div class="form-reg-container">
+      <div class="reg-wrap">
+        <form class="form-order">
+          <div class="head-container">
+            <div class="h3-container">
+              <h3 class="order-h3">Вход в личный кабинет</h3>
+            </div>
+          </div>
+          <label class="order-label" for="password"></label>
+          <div class="input-group">
+            <div class="icon"></div>
+            <input class="order-input" type="text" name="pass" placeholder="Пароль" id="password"/>
+          </div>
+          <label class="order-label" for="email"></label>
+          <div class="input-group">
+            <div class="icon phone"></div>
+            <input class="order-input" type="text" name="email" placeholder="vershinina@mail.ru" id="email"/>
+          </div>
+          <p class="order-terms">
+            <input class="order-agreement" id="reg-agreement" type="checkbox"/>
+            <label class="order-agree" for="reg-agreement">Запомнить меня</label><a class="tex-reg" href="#">Забыли пароль?</a>
+          </p>
+          <input class="order-btn" type="submit" value="Войти"/>
+        </form>
+        <form class="form-order gray">
+          <div class="head-container">
+            <div class="h3-container">
+              <h3 class="order-h3">Заказать звонок</h3>
+            </div>
+            <button class="order-close reg-close"></button>
+          </div>
+          <p class="reg-desc">После регистрации на сайте вам будет<br/>доступно отслеживание состояния<br/>заказов, личный кабинет и другие новые возможности.</p>
+          <input class="reg-btn" type="submit" value="Заказать проект"/>
+        </form>
+      </div>
+    </div>
+    <svg display="none">
+      <symbol width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="burger">
+        <g>
+          <g>
+            <image width="24" height="18" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAYAAABB7B6eAAAARklEQVQ4T2P88+ffAUZGBnsGGoD//xkOMtLcAho4HMVIxlELCIXAMAgimidTmltAKJIolR8GkUxpEBDSPwyCiObJlNYWAADu9ShXQXMCbAAAAABJRU5ErkJggg=="></image>
+          </g>
+        </g>
+      </symbol>
+    </svg>
+    <svg display="none">
+      <symbol width="17" height="9" viewBox="0 0 17 9" xmlns="http://www.w3.org/2000/svg" id="arrow">
+        <g>
+          <g>
+            <image width="17" height="9" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAxUlEQVQoU43SvS5FURDF8d/KRSQKSrVCRaPyCGoKz6IUGiqJ8BoeQ3wUtESr0isUI1tcOfc45OxqstfMf2bW3tE5VbWLHVwmeehq/8WZilW1jUPc4SzJ22hIVa1gDUe4xwneMelBCj9Nv7Wvu1RVK97HK87xgWW0hJltByZr0EmD3GILL3jGEhYGII3RB89hvkGaF83Q9eYFbrA40LUPmKaka+wxNnCK6yR/Ff3izxhVVRdYxUGSp9Gv0/snm9jDVZLHsZBP91c5PquZoU4AAAAASUVORK5CYII="></image>
+          </g>
+        </g>
+      </symbol>
+    </svg>
+    <header class="header">
+      <div class="small-back">
+        <div class="wrapper">
+          <div class="container small">
+            <div class="title">
+              <button class="burger" type="button">
+                <svg class="icon-burger" width="24" height="20" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#burger"></use>
+                </svg>
+              </button><img class="logo" src="images/logo.png" alt="img"/>
+              <p class="name">Joker Fireworks</p>
+            </div>
+            <div class="visitor-contauner">
+              <div class="contact"><a class="phone" href="tel:+79100007994">+7 (910) 000-79-94</a><a class="back-call" href="#">Обратный звонок</a></div>
+              <div class="btn-grup">
+                <button class="download" type="button">Скачать прайс</button>
+                <button class="look" type="button">Смотреть каталог</button>
+              </div>
+              <div class="guest-panel"><a class="enter" href="#">Вход для клиентов</a><a class="busket" href="#">Товаров<br/>в корзине:<span class="num">0</span></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper pos">
+          <div class="openmenu-container">
+            <ul class="catalog-list">
+              <li class="item-catalog"><a class="catalog-href" href="#">Каталог</a></li>
+              <li class="item-catalog"><a class="catalog-href" href="#">О компании</a></li>
+              <li class="item-catalog"><a class="catalog-href" href="#">Условия сотрудничества</a></li>
+              <li class="item-catalog"><a class="catalog-href" href="#">Материалы для бизнеса</a></li>
+              <li class="item-catalog"><a class="catalog-href" href="#">Вопросы и ответы</a></li>
+              <li class="item-catalog"><a class="catalog-href" href="#">Инфо-блог</a></li>
+              <li class="item-catalog"><a class="catalog-href" href="#">Контакты</a></li>
+            </ul>
+            <ul class="kind-list">
+              <li class="item-kind"><a class="kind-href" href="#">Бытовая пиротехника</a></li>
+              <li class="item-kind"><a class="kind-href" href="#">Сценическая пиротехника</a></li>
+              <li class="item-kind"><a class="kind-href" href="#">Профессиональная пиротехника</a></li>
+            </ul>
+            <div class="container">
+              <ul class="good-list">
+                <li class="item-good"><a class="good-href" href="#">Петарды</a></li>
+                <li class="item-good"><a class="good-href" href="#">Цветной дым</a></li>
+                <li class="item-good"><a class="good-href" href="#">Летающие фейерверки</a></li>
+                <li class="item-good"><a class="good-href" href="#">Тортовые свечи</a></li>
+                <li class="item-good"><a class="good-href" href="#">Бенгальские огни</a></li>
+                <li class="item-good"><a class="good-href" href="#">Ракеты</a></li>
+                <li class="item-good"><a class="good-href" href="#">Римские свечи</a></li>
+                <li class="item-good"><a class="good-href" href="#">Батареи салютов</a></li>
+                <li class="item-good"><a class="good-href" href="#">Фонтаны</a></li>
+                <li class="item-good"><a class="good-href" href="#">Фестивальные шары</a></li>
+              </ul>
+              <div class="form-container">
+                <form class="form-order">
+                  <div class="head-container">
+                    <div class="h3-container">
+                      <h3 class="order-h3">Заказать звонок</h3>
+                    </div>
+                    <button class="order-close"></button>
+                  </div>
+                  <label class="order-label" for="order-name"></label>
+                  <div class="input-group">
+                    <div class="icon"></div>
+                    <input class="order-input" type="text" name="name" placeholder="Ваше имя" id="order-name"/>
+                  </div>
+                  <label class="order-label" for="order-phone"></label>
+                  <div class="input-group">
+                    <div class="icon phone"></div>
+                    <input class="order-input" type="text" name="phone" placeholder="Телефон" id="order-phone"/>
+                  </div>
+                  <p class="order-terms">
+                    <input class="order-agreement" id="order-agreement" type="checkbox"/>
+                    <label class="order-agree" for="order-agreement">Я согласен с политикой конфиденцильности</label>
+                  </p>
+                  <input class="order-btn" type="submit" value="Отправить заявку" disabled="disabled"/>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="wrapper">
+        <div class="nav-container">
+          <p class="nav-txt"><a class="nav-txt-href" href="#">Главная</a><span class="slash">/</span><a class="nav-txt-href" href="#">Каталог</a><span class="slash">/</span><a class="choise" href="#">Батареи салютов</a></p>
+        </div>
+        <div class="category-wrapper">
+          <aside class="car-wrap">
+            <div class="choose-cat-nav">
+              <div class="cat-nav-wrapper">
+                <div class="cat-nav-container">
+                  <p class="cat-head">категории</p>
+                  <button class="cat-nav-open">-</button>
+                </div>
+                <div class="cat-line"></div>
+              </div>
+              <ul class="list-cat">
+                <li class="cat-item"><a class="cat-href" href="#">
+                    <div class="cat-txt-container">
+                      <div class="green-squre"></div>
+                      <p class="cat">категории</p>
+                    </div>
+                    <div class="cat-arr"></div></a></li>
+                <li class="cat-item"><a class="cat-href" href="#">
+                    <div class="cat-txt-container">
+                      <div class="green-squre"></div>
+                      <p class="cat">Петарды</p>
+                    </div>
+                    <div class="cat-arr"></div></a></li>
+                <li class="cat-item"><a class="cat-href" href="#">
+                    <div class="cat-txt-container">
+                      <div class="green-squre"></div>
+                      <p class="cat">Ракеты</p>
+                    </div>
+                    <div class="cat-arr"></div></a></li>
+                <li class="cat-item"><a class="cat-href" href="#">
+                    <div class="cat-txt-container">
+                      <div class="green-squre"></div>
+                      <p class="cat">Свечи</p>
+                    </div>
+                    <div class="cat-arr"></div></a></li>
+                <li class="cat-item"><a class="cat-href" href="#">
+                    <div class="cat-txt-container">
+                      <div class="green-squre"></div>
+                      <p class="cat">Фонтаны</p>
+                    </div>
+                    <div class="cat-arr"></div></a></li>
+                <li class="cat-item"><a class="cat-href" href="#">
+                    <div class="cat-txt-container">
+                      <div class="green-squre"></div>
+                      <p class="cat">Фаеры</p>
+                    </div>
+                    <div class="cat-arr"></div></a></li>
+              </ul>
+            </div>
+          </aside>
+          <section class="goods"></section>
+        </div>
+      </div>
+      <section class="partneship">
+        <div class="wrapper">
+          <h2 class="partneship-title">Несколько простых шагов для сотрудничества</h2>
+          <div class="condition">
+            <div class="line">
+              <div class="step-block">
+                <div class="step-container">
+                  <p class="step">Шаг 1</p>
+                  <div class="reg-container">
+                    <p class="reg">Регистрация</p><img class="pic" src="images/laptop.png" alt="img"/>
+                  </div>
+                </div>
+                <div class="desc-container">
+                  <p class="desc">Зарегистрируйтесь в личном кабинете  или оставьте заявку на нашем сайте (работает онлайн чат, вайбер) или по телефону<br/><span class="phone">+7 (910) 000-79-94</span></p>
+                </div>
+              </div>
+              <div class="step-block step-block2">
+                <div class="step-container">
+                  <p class="step">Шаг 2</p>
+                  <div class="reg-container">
+                    <p class="reg">Скидка</p><img class="pic" src="images/procent.png" alt="img"/>
+                  </div>
+                </div>
+                <div class="desc-container">
+                  <p class="desc">Зафиксируйте Вашу уникальную скидку оптового покупателя</p>
+                </div>
+              </div>
+            </div>
+            <div class="line line2">
+              <div class="step-block">
+                <div class="step-container">
+                  <p class="step">Шаг 3</p>
+                  <div class="reg-container">
+                    <p class="reg">Оплата</p><img class="pic" src="images/сredit-card.png" alt="img"/>
+                  </div>
+                </div>
+                <div class="desc-container">
+                  <p class="desc">Внесите предоплату или<br/>возьмите товар в рассрочку (в<br/>зависимости от условий)</p>
+                </div>
+              </div>
+              <div class="outcome">
+                <div class="txt-container">
+                  <p class="txt">Получите заказ в транспортной<br/>компании своего города<br/><span class="txt-big">и получайте прибыль от продаж!!!</span></p>
+                </div><img class="pic" src="images/hand.png" alt="img"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="makeorder">
+        <div class="wrapper">
+          <h2 class="title-contact">У Вас остались вопросы? Задайте их прямо сейчас!</h2>
+          <form class="order">
+            <p class="form-title">Наши специалисты дадут профессиональную консультацию по любым вопросам, и, по запросу, мы отправим прайс на нашу продукцию</p>
+            <div class="input-container">
+              <label for="name2"></label>
+              <div class="input-grup">
+                <div class="icon"></div>
+                <input class="input form-control" type="email" id="name2" placeholder="Ваше имя"/>
+              </div>
+              <label for="email2"></label>
+              <div class="input-grup">
+                <div class="icon email"></div>
+                <input class="input form-control" type="email" id="email2" placeholder="Ваш e-mail"/>
+              </div>
+              <label for="phone2"></label>
+              <div class="input-grup">
+                <div class="icon phone"></div>
+                <input class="input form-control" type="email" id="phone2" placeholder="Ваш телефон"/>
+              </div>
+              <div class="btn-container">
+                <button class="sent" type="button">Отправить заявку</button>
+                <p class="form-terms">
+                  <input class="form-agreement" id="agreement2" type="checkbox"/>
+                  <label class="form-label" for="agreement2">Я согласен с условиями обработки персональных данных</label>
+                </p>
+              </div>
+            </div><img class="paper" src="images/paper.png" alt="img"/>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <nav class="navigation-container">
+          <menu class="menu-container">
+            <li class="item"><a class="logo-container" href="#"><img class="logo" src="images/logo-small.png" alt="img"/>
+                <p class="name">Производитель и оптовый поставщик пиротехники в РФ</p></a></li>
+            <li class="item">
+              <ul class="catalog-list">
+                <li class="catalog-item"><a class="catalog-hgef" href="#">Каталог продукции</a></li>
+                <li class="catalog-item"><a class="item-href" href="#">Бытовая пиротехника</a></li>
+                <li class="catalog-item"><a class="item-href" href="#">Сценическая пиротехника</a></li>
+                <li class="catalog-item"><a class="item-href" href="#">Профессиональная пиротехника</a></li>
+              </ul>
+            </li>
+            <li class="item">
+              <ul class="client-list">
+                <li class="client-item"><a class="client-href" href="#">Информация для клиентов</a></li>
+                <li class="client-item"><a class="item-href" href="#">О производителе</a></li>
+                <li class="client-item"><a class="item-href" href="#">Вопросы - ответы</a></li>
+                <li class="client-item"><a class="item-href" href="#">Инфо-блог</a></li>
+                <li class="client-item"><a class="item-href" href="#">Контактная информация</a></li>
+              </ul>
+            </li>
+            <li class="item">
+              <ul class="list-terms">
+                <li class="terms-item"><a class="item-href" href="#">Условия сотрудничества</a></li>
+                <li class="terms-item"><a class="item-href" href="#">Cертификаты</a></li>
+                <li class="terms-item"><a class="item-href" href="#">Реквизиты</a></li>
+                <li class="terms-item"><a class="item-href" href="#">Договора</a></li>
+              </ul>
+            </li>
+            <li class="item">
+              <ul class="contacts-list">
+                <li class="contactds-item">
+                  <p class="adress">Московская обл, г. Сергиев Посад, шоссе Московское 22</p><a class="map" href="#">Показать на карте</a>
+                </li>
+                <li class="contactds-item"><a class="phone" href="tel:+79100007994">+7 (910) 000-79-93</a>
+                  <p class="schedule">пн-сб: с 9:00 до 18:00</p>
+                </li>
+              </ul>
+            </li>
+          </menu>
+        </nav>
+        <div class="guest-panel"><a class="youtube-href" href="#">
+            <p class="chanel">Наш канал<br/><span class="red">YouTube</span></p></a>
+          <ul class="list-load">
+            <li class="load-item"><a class="load-catalog" href="#">Скачать каталог</a>
+              <div class="icon-load"></div>
+            </li>
+            <li class="load-item"><a class="load-catalog" href="#">Скачать прайс</a>
+              <div class="icon-load"></div>
+            </li>
+            <li class="load-item"><a class="load-catalog" href="#">Скачать видео</a>
+              <div class="icon-video"></div>
+            </li>
+          </ul>
+          <ul class="payment">
+            <li class="item-payment"><a class="payment-herf" href=""><img class="pic-payment" src="images/money.png" alt="img"/></a></li>
+            <li class="item-payment"><a class="payment-herf" href=""><img class="pic-payment" src="images/kivi.png" alt="img"/></a></li>
+            <li class="item-payment"><a class="payment-herf" href=""><img class="pic-payment" src="images/world.png" alt="img"/></a></li>
+          </ul><a class="email" href="mailto:jokersale@mail.ru">jokersale@mail.ru</a>
+        </div>
+      </div>
+      <div class="rights">
+        <div class="wrapper">
+          <div class="right-container">
+            <div class="blok">
+              <p class="secret">Политика конфиденциальности</p>
+              <p class="year">© 2020 Joker Fireworks</p>
+            </div><a class="site" href="#"> Разработка сайта:<span class="site-img"></span></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

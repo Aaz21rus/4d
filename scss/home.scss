@@ -585,9 +585,14 @@ body {
 @import "components/partneship";
 @import "components/makeorder";
 
+//about
 @import "components/about-company";
 @import "components/advertising";
 @import "components/team";
 @import "components/production";
+
+//category
+@import "modules/category";
+
 
 @import "modules/footer";
