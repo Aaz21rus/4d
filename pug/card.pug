@@ -1,3 +1,7 @@
+-var effect = ["images/effect.png","images/effect.png","images/effect.png","images/effect.png","images/effect.png","images/effect.png","images/effect.png","images/effect.png",]
+-var props = [{txt1:"Фасовка:",txt2:"картон"},{txt1:"Количество эффектов:",txt2:"25"},{txt1:"Минимальный заказ:",txt2:"120 штук"},{txt1:"Высота вылета:",txt2:"20 метров"},{txt1:"Количество зарядов:",txt2:"25"},{txt1:"Калибр, дюйм:",txt2:"0,2"},{txt1:"Размер изделия: ",txt2:"75х55х55 мм"},{txt1:"Объем ящика:",txt2:"0,035 м3"},{txt1:"Вес ящика:",txt2:"10 кг"},]
+-var card = ["Узнать цену","Узнать цену","Узнать цену","Узнать цену"]
+
 <!DOCTYPE html>
 html(lang="ru")
   head
@@ -12,7 +16,116 @@ html(lang="ru")
     include modules/header-small
 
     main.main
+      .wrapper
+        .nav-container
+          p.nav-txt
+            a.nav-txt-href(href="#") Главная
+            span.slash /
+            a.nav-txt-href(href="#") Каталог
+            span.slash /
+            a.nav-txt-hrefe(href="#") Батареи салютов
+            span.slash /
+            a.choise(href="#") Салютная установка JFKT 25 Катюша
 
+
+
+        .card-wrapper
+          aside.car-wrap
+            .choose-cat-nav
+              .cat-nav-wrapper
+                .cat-nav-container
+                  p.cat-head категории
+                  button.cat-nav-open -
+
+            .card-img-container
+              button.card-arr(type="button")
+              img.card-pic(src="images/kate.png" alt="img")
+              button.card-arr.right(type="button")
+            p.card-effect Эффекты
+            .effects-container
+              each i in effect
+                .effect-img-container
+                  img.effect-img(src=i alt="img")
+            .video-container
+              img.card-video(src="images/video2.png" alt="img")
+            button.download(type="button")
+              span.txt скачать видео
+          section.card-props
+            .about-head-conatainer
+              h2.about-head Салютная установка JFKT 25 Катюша
+            .storage-props-container
+              ul.list-props
+                each i in props
+                  li.item-props
+                    p.name=i.txt1
+                    p.count=i.txt2
+              .find-price
+                .in-stock-container
+                  p.art Артикул: 938391
+                  p.in-stock В наличии
+                button.findbtn-price(type="button") узнать цену
+                .btn-compare-grup
+                  .btn-price-grup
+                    button.compare(type="button")
+                    p.txt-btn-price Сравнить
+                  .btn-price-grup
+                    button.compare.price-basket(type="button")
+                    p.txt-btn-price В корзину
+                button.btn-partneship
+                  span.btn-partneship-txt Условия сотрудничества
+            h2.head-descp Описание
+            p.descp-txt Расположить изделие строго вертикально на ровной горизонтальной поверхности не ближе 30м от людей, строений, деревьев, дорог, легковоспламеняющихся материалов, деревьев и т.п обеспечив невозможность опрокидывания изделия при срабатывании. Освободить и расправить фитиль. Поджечь с расстояния вытянутой руки конец фитиля и немедленно удалиться на расстояние 30-40 метров.
+            .head-grup
+              h2.head-sert Сертификаты
+              button.sert-load
+                span.load-txt Скачать
+            .certificate-swiper
+              .cert-img-container
+                img.certificate-img(src="images/scertificate.png" alt="img")
+                .shadow-window
+                  img.search(src="images/search.png" alt="img")
+              .cert-img-container
+                img.certificate-img(src="images/scertificate.png" alt="img")
+                .shadow-window
+                  img.search(src="images/search.png" alt="img")
+              .cert-img-container
+                img.certificate-img(src="images/scertificate.png" alt="img")
+                .shadow-window
+                  img.search(src="images/search.png" alt="img")
+              .cert-img-container
+                img.certificate-img(src="images/scertificate.png" alt="img")
+                .shadow-window
+                  img.search(src="images/search.png" alt="img")
+              button.arr.left(type="button")
+              button.arr.right(type="button")
+
+        section.reccom
+          h2.head-reccom Joker рекомендует
+          .recom-container
+            each i in card
+              .card
+                .img-container
+                  .good-container
+                    img.img(src="images/pirate.png" alt="img")
+                  img.move(src="images/movie.png" alt="img")
+                p.recom-name Петарда JF K0201F
+                .line
+                .bottom-container
+                  button.btn-prise(type="button")=i
+                  button.btn-basket(type="button")
+            button.arr.left(type="button")
+            button.arr.right(type="button")
+          ul.list
+            li.item
+              button.point(type="button")
+            li.item
+              button.point(type="button")
+            li.item
+              button.point(type="button")
+            li.item
+              button.point(type="button")
+            li.item
+              button.point(type="button")
     include modules/footer
 
     script(src="js/scripts.js")
