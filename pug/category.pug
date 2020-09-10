@@ -1,8 +1,9 @@
 -var cat = ["категории","Петарды","Ракеты","Свечи","Фонтаны","Фаеры"]
 -var battery = [{id:"checkbox1",txt:"Малые батареи"},{id:"checkbox2",txt:"Средние батареи"},{id:"checkbox3",txt:"Крупные батареи"},{id:"checkbox4",txt:"Комбинированные"},]
--var num = [{id:"checkbox1",txt:"0.2"},{id:"checkbox2",txt:"0.8"},{id:"checkbox3",txt:"1"},{id:"checkbox4",txt:"1.2"},{id:"checkbox4",txt:"1.6"},{id:"checkbox4",txt:"2"}]
--var pack = [{id:"checkbox1",txt:"Бумага"},{id:"checkbox2",txt:"Картон"}]
--var card = [{txt:"Салютная установка JFC\n" +"br\n"+"|30-16/02 \"Рио\" 10/1",src:"images/good1.png"},{txt:"Салютная установка\n" +"br\n"+"Отожгем! JF C30-19 V1"+"br\n"+"6/1",src:"images/good2.png"},{txt:"Салютная установка JFC\n" +"br\n"+"30-25/03 С Наступающим"+"br\n"+"4/1",src:"images/good2.png"}]
+-var num = [{id:"checkbox5",txt:"0.2"},{id:"checkbox6",txt:"0.8"},{id:"checkbox7",txt:"1"},{id:"checkbox8",txt:"1.2"},{id:"checkbox9",txt:"1.6"},{id:"checkbox10",txt:"2"}]
+-var pack = [{id:"checkbox11",txt:"Бумага"},{id:"checkbox12",txt:"Картон"}]
+-var card = [{txt:"Салютная установка JFC\n"+"|30-16/02 \"Рио\" 10/1",src:"images/good1.png"},{txt:"Салютная установка\n"+"Отожгем! JF C30-19 V1 6/1",src:"images/good2.png"},{txt:"Салютная установка JFC\n" +"30-25/03 С Наступающим 4/1",src:"images/good3.png"}]
+-var goodCard = [{txt:"Салютная установка JFKT 25 Катюша 25з 30/4",src:"images/kate.png"},{txt:"Салютная установка JFKT 25 Катюша 25з 30/4",src:"images/kate.png"},{txt:"Салютная установка JFKT 25 Катюша 25з 30/4",src:"images/kate.png"},{txt:"Салютная установка JFKT 25 Катюша 25з 30/4",src:"images/kate.png"},{txt:"Салютная установка JFKT 25 Катюша 25з 30/4",src:"images/kate.png"},{txt:"Салютная установка JFKT 25 Катюша 25з 30/4",src:"images/kate.png"},{txt:"Салютная установка JFKT 25 Катюша 25з 30/4",src:"images/kate.png"},{txt:"Салютная установка JFKT 25 Катюша 25з 30/4",src:"images/kate.png"},{txt:"Салютная установка JFKT 25 Катюша 25з 30/4",src:"images/kate.png"}]
 
 <!DOCTYPE html>
 html(lang="ru")
@@ -34,13 +35,13 @@ html(lang="ru")
                 .cat-nav-container
                   p.cat-head категории
                   button.cat-nav-open -
-                div.cat-line
+                .cat-line
               ul.list-cat
                 each i in cat
                   li.cat-item
                     a.cat-href(href="#")
                       .cat-txt-container
-                        div.green-squre
+                        .green-squre
                         p.cat=i
                       .cat-arr
             .choose-cat-nav
@@ -114,7 +115,7 @@ html(lang="ru")
                 span.num (43)
             .card-container
               each i in card
-                a.card(href="#")
+                .card
                   img.new(src="images/new.png" alt="img")
                   .head-container
                     p.head-name=i.txt
@@ -125,19 +126,19 @@ html(lang="ru")
                     img.img(src=i.src alt="img")
                     .arr-r
                   .salut-container
-                    img.salut(src="images/salut1.png")
-                    img.salut(src="images/salut2.png")
-                    img.salut(src="images/salut3.png")
-                    img.salut(src="images/salut4.png")
+                    img.salut(src="images/salut1.png" alt="img")
+                    img.salut(src="images/salut2.png" alt="img")
+                    img.salut(src="images/salut3.png" alt="img")
+                    img.salut(src="images/salut4.png" alt="img")
                   .props-container
                     .shoot 25
                     .effect 5
                     .rad 0.2
                   .line
                   .bottom-container
-                    .btn-prise Узнать цену
-                    img.btn-bar(src="images/icon-bar.png" alt="img")
-                    img.btn-basket(src="images/icon-basket-card.png" alt="img")
+                    button.btn-prise(type="button") Узнать цену
+                    button.btn-bar(type="button")
+                    button.btn-basket(type="button")
 
             .about-head-conatainer
               .sort-container
@@ -163,6 +164,41 @@ html(lang="ru")
                   li.row4
 
 
+            .card-good-container
+              each i in goodCard
+                .card
+                  .head-container
+                    p.head-name=i.txt
+                    .movie-contauner
+                      img.move(src="images/movie.png" alt="img")
+                  .good-container
+                    .arr-l
+                    img.img(src=i.src alt="img")
+                    .arr-r
+                  .salut-container
+                    img.salut(src="images/salut1.png" alt="img")
+                    img.salut(src="images/salut2.png" alt="img")
+                    img.salut(src="images/salut3.png" alt="img")
+                    img.salut(src="images/salut4.png" alt="img")
+                  .props-container
+                    .shoot 25
+                    .effect 5
+                    .rad 0.2
+                  .line
+                  .bottom-container
+                    button.btn-prise(type="button") Узнать цену
+                    button.btn-bar(type="button")
+                    button.btn-basket(type="button")
+
+            .btn-nav-container
+              button.nav-txt(type="button") Назад
+              .numbers-containers
+                p.count 1
+                .dots3 ...
+                p.count 6
+                p.count 7
+                p.count 8
+              button.nav-txt(type="button") Вперед
       include modules/partneship
       include modules/question
 
