@@ -12,7 +12,36 @@ html(lang="ru")
     include modules/header-small
 
     main.main
+      .wrapper
+        section.contact
+          .nav-container
+            p.nav-txt
+              a.nav-txt-href(href="#") Главная
+              span.slash /
+              a.choise(href="#") Контакты
+          .about-head-conatainer
+            h2.about-head Контактная информация
 
+          .contact-btn-group
+            button.moscow(type="button") Московская область
+            button.crimea(type="button") Крым
+          .contact-info-container
+            ul.contact-info
+              li.contact-info-item
+                p.txt-head Адрес:
+                p.adr-txt Московская обл
+                  br
+                  |г. Сергиев Посад, шоссе Московское, 22
+              li.contact-info-item
+                p.txt-head Телефон:
+                a.phone(href="tel:+79100007994") +7 (910) 000-79-93
+              li.contact-info-item
+                p.txt-head E-mail::
+                a.email(href="mailto:jokersale@mail.ru") jokersale@mail.ru
+              li.contact-info-item
+                p.txt-head График работы:
+                p.txt-time пн. – пт.: с 9:00 до 18:00 (МСК)
+            img.map(src="images/map.png" alt="img")
     include modules/footer
 
     script(src="js/scripts.js")
