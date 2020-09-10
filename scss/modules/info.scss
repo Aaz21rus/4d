@@ -1,0 +1,188 @@
+.info-page {
+  .about-head-conatainer {
+    margin-bottom: 50px;
+  }
+  .info-btn-group {
+    display: flex;
+    margin-bottom: 43px;
+    .btn-info {
+      width: 183px;
+      height: 61px;
+      box-shadow: 0 9px 49px 2px rgba(34, 49, 78, 0.07);
+      border-radius: 4px;
+      border: 1px solid #ebeded;
+      background-color: #ffffff;
+      color: #111111;
+      font-family: 'Panton';
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 34px;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+      &:hover {
+        background-color: #eaa65e;
+        color: #FFFFFF;
+      }
+      &:hover .discounts {
+        background-image: url("../images/delay.png");
+      }
+      &:hover .payment {
+        background-image: url("../images/delay.png");
+      }
+      &:hover .delay {
+        background-image: url("../images/delay.png");
+      }
+      &:hover .ship {
+        background-image: url("../images/delay.png");
+      }
+      &:hover .back {
+        background-image: url("../images/delay.png");
+      }
+      .discounts {
+        padding-left: 44px;
+        background-image: url("../images/discounts.png");
+        background-repeat: no-repeat;
+        background-position: left;
+      }
+      .payment {
+        padding-left: 50px;
+        background-image: url("../images/payment.png");
+        background-repeat: no-repeat;
+        background-position: left;
+      }
+      .delay {
+        padding-left: 46px;
+        background-image: url("../images/payment.png");
+        background-repeat: no-repeat;
+        background-position: left;
+      }
+      .ship {
+        padding-left: 49px;
+        background-image: url("../images/shipment.png");
+        background-repeat: no-repeat;
+        background-position: left;
+      }
+      .back {
+        padding-left: 46px;
+        background-image: url("../images/payback.png");
+        background-repeat: no-repeat;
+        background-position: left;
+      }
+    }
+  }
+  .head-delay {
+    margin-bottom: 33px;
+    color: #111111;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.7px;
+  }
+  .delay-art {
+    margin-bottom: 50px;
+    color: #111111;
+    font-family: Panton;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 34px;
+  }
+  .head-list-number {
+    margin-bottom: 37px;
+    color: #111111;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 32.7px;
+  }
+  .list-number {
+    margin-bottom: 90px;
+  }
+  ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+  }
+  ol li {
+    display: flex;
+    counter-increment: my-awesome-counter;
+    color: #525252;
+    font-family: 'Panton';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 34px;
+    &:not(:last-child) {
+      margin-bottom: 47px;
+    }
+  }
+  ol li::before {
+    display: inline-block;
+    content: counter(my-awesome-counter) ". ";
+    margin-right: 13px;
+    margin-left: 100px;
+    color: #5ca0a5;
+    font-family: 'Panton';
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 34px;
+  }
+  .head-quest {
+    margin-bottom: 50px;
+    text-align: center;
+    color: #111111;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 32.7px;
+  }
+  .list-quest {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 18px;
+    .quest-item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+      width: 100%;
+      height: 83px;
+      border-radius: 4px;
+      background-color: #eeebe4;
+      &:hover {
+        background-color: #eca860;
+      }
+      .txt-quest {
+        color: #111111;
+        font-family: 'Panton';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 34px;
+      }
+      .quest-btn {
+        width: 43px;
+        height: 43px;
+        border-radius: 22px;
+        box-shadow: 0 3px 49px 8px rgba(165, 96, 50, 0.08);
+        background-color: #ffffff;
+      }
+      .quest-answer {
+        display: none;
+        position: absolute;
+        left: 0;
+        bottom: -119px;
+        //display: flex;
+        align-items: center;
+        height: 121px;
+        padding: 0 43px 0 38px;
+        background: #FFFFFF;
+        z-index: 1;
+        .txt-answer {
+          color: #111111;
+          font-family: Panton;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
